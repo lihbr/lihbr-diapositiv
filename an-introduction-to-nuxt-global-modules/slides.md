@@ -5,6 +5,12 @@ layout: cover
 themeConfig:
   pip: "large"
 info: |
+  #### An Introduction to Nuxt<br />Global Modules
+
+  _Like Chrome extensions, but for your Nuxt.js environments._
+
+  <br />
+
   Everything from this talk & more:
 
   **-> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)**
@@ -182,7 +188,7 @@ layout: center
 
 ---
 
-## Nuxt Hue is a<br/>Nuxt global module
+## Nuxt Hue is a<br />Nuxt global module
 
 --- slides
 layout: cover

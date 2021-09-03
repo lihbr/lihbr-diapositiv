@@ -14,16 +14,16 @@ Assets and sources for my talks and presentations. Find all the resources about 
 
 `.github`, `.husky` and all root files are licensed under an [MIT License][license].
 
-All other subdirectories (talk and presentation directories) are licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][license-href].
+All other subdirectories (talk and presentation directories) are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)][license-href].
 
 <!-- Links -->
 
 [diapositiv]: https://diapositiv.lihbr.com
 [license]: ./LICENSE
-
-[cc-license-src]: https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png
-[cc-license-href]: http://creativecommons.org/licenses/by-nc-nd/4.0
+[cc-license-src]: https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png
+[cc-license-href]: http://creativecommons.org/licenses/by-nc-sa/4.0
 
 <!-- Badges -->
+
 [conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [conventional-commits-href]: https://conventionalcommits.org
