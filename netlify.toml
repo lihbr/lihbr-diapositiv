@@ -3,9 +3,10 @@
 	# Base directory
 	base = ""
 	# Build command
-	command = "npm run build"
+	command = "cd $DIRECTORY && npx slidev export"
 	# Build directory
-	publish = "dist/"
+	publish = "\"${DIRECTORY}/dist/\""
+	ignore  = "git diff --quiet HEAD^ HEAD ./package.json \"./${DIRECTORY}/\""
 
 # Enforce Node version
 [build.environment]
