@@ -6,7 +6,7 @@
 	command = "cd $DIRECTORY && npx slidev build"
 	# Build directory
 	publish = "\"${DIRECTORY}/dist/\""
-	ignore  = "git diff --quiet HEAD^ HEAD ./package.json \"./${DIRECTORY}/\""
+	ignore  = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECTORY}/\""
 
 # Enforce Node version
 [build.environment]
