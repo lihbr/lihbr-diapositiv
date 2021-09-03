@@ -1,0 +1,24 @@
+# Global context
+[build]
+	# Base directory
+	base = ""
+	# Build command
+	command = "npm run build"
+	# Build directory
+	publish = "dist/"
+
+# Enforce Node version
+[build.environment]
+	NODE_VERSION = "16.6.1"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+	force = false
+
+# [[redirects]]
+# 	from = "https://SITE_URL.lucie.red/*"
+# 	to = "https://example.com/:splat"
+# 	status = 301
+# 	force = true
