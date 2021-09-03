@@ -3,9 +3,9 @@
 	# Base directory
 	base = ""
 	# Build command
-	command = "cd $DIRECTORY && npx slidev build"
+	command = "cd $DIRECTORY && npx slidev build && mv dist ../dist"
 	# Build directory
-	publish = "\"${DIRECTORY}/dist/\""
+	publish = "dist/"
 	ignore  = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECTORY}/\""
 
 # Enforce Node version
