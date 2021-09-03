@@ -3,7 +3,7 @@
 	# Base directory
 	base = ""
 	# Build command
-	command = "cd $DIRECTORY && npx slidev export"
+	command = "cd $DIRECTORY && npx slidev build"
 	# Build directory
 	publish = "\"${DIRECTORY}/dist/\""
 	ignore  = "git diff --quiet HEAD^ HEAD ./package.json \"./${DIRECTORY}/\""
