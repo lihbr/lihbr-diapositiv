@@ -4,6 +4,22 @@ lineNumbers: true
 layout: cover
 themeConfig:
   pip: "large"
+info: |
+  Everything from this talk & more:
+
+  **-> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)**
+
+  <br />
+
+  My blog:
+
+  **-> [lucie.red](https://lucie.red)**
+
+  <br />
+
+  Twitter:
+
+  **-> [lucie.red/twitter](https://lucie.red/twitter)**
 ---
 
 # An Introduction to Nuxt Global Modules
@@ -665,20 +681,20 @@ layout: v-center
 
 - <twemoji-receipt /> Are basically Node.js scripts;
 - <twemoji-file-cabinet /> Are shipped using the `bin` config of `package.json`:
-	```json
-	{
-		"bin": {
-			"module-docs": "./bin/cli.js"
-		}
-	}
-	```
+  ```json
+  {
+  	"bin": {
+  		"module-docs": "./bin/cli.js"
+  	}
+  }
+  ```
 - <twemoji-anger-symbol /> A [hashbang](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) is necessary for the CLI to execute correctly:
 
-	```javascript
-	#!/usr/bin/env node
+  ```javascript
+  #!/usr/bin/env node
 
-	// CLI code...
-	```
+  // CLI code...
+  ```
 
 </v-clicks>
 
@@ -715,9 +731,9 @@ Global module
 
 - <twemoji-ninja /> Now available transparently on all our Nuxt projects;
 - <twemoji-rocket /> Shipped to npm, give it a try yourself:
-	```bash
-	npm install --global @lihbr/module-docs
-	```
+  ```bash
+  npm install --global @lihbr/module-docs
+  ```
 
 </v-clicks>
 
@@ -768,13 +784,13 @@ layout: v-center
 
 <div class="mb-6">
 
-<twemoji-books class="inline mb-2" /> &nbsp;Everything from the talk & more:
+<twemoji-books class="inline mb-2" /> &nbsp;Everything from this talk & more:
 
 #### -> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)
 
 </div>
 
-<div class="mb-6">
+<div class="mb-6" v-click>
 
 <twemoji-newspaper class="inline mb-2" /> &nbsp;My blog:
 
@@ -782,7 +798,7 @@ layout: v-center
 
 </div>
 
-<div>
+<div v-click>
 
 <twemoji-megaphone class="inline mb-2" /> Twitter:
 
