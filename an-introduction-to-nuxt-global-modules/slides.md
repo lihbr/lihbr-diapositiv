@@ -410,7 +410,7 @@ clicks: 6
 
 <twemoji-prohibited /> ~~“There's a module for that”;~~
 
-- <twemoji-check-mark-button /> There's plenty to be build;
+- <twemoji-check-mark-button /> There's plenty to be buitd;
 
 </li>
 
@@ -450,7 +450,7 @@ layout: v-center
 
 ---
 
-- <twemoji-construction /> There's plenty to be build;
+- <twemoji-construction /> There's plenty to be built;
 - <twemoji-gear /> Global modules are registered and configured globally (once);
 - <twemoji-building-construction /> Global modules are functions;
 
@@ -469,7 +469,7 @@ layout: center
 
 ---
 
-## What do global modules enable us?
+## What do global modules enable us to do?
 
 --- slides
 layout: items
