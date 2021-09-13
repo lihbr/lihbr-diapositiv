@@ -14,7 +14,7 @@ Assets and sources for my talks and presentations. Find all the resources about 
 
 `.github`, `.husky` and all root files are licensed under an [MIT License][license].
 
-All other subdirectories (talk and presentation directories) are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)][license-href].
+All other subdirectories (talk and presentation directories) are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)][cc-license-href].
 
 <!-- Links -->
 
