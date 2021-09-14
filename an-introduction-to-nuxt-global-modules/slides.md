@@ -306,11 +306,7 @@ layout: center
 
 <br />
 
-<v-click>
-
 Comprehensive list -> [modules.nuxtjs.org](https://modules.nuxtjs.org)
-
-</v-click>
 
 --- slides
 layout: v-center
@@ -410,7 +406,7 @@ clicks: 6
 
 <twemoji-prohibited /> ~~“There's a module for that”;~~
 
-- <twemoji-check-mark-button /> There's plenty to be buitd;
+- <twemoji-check-mark-button /> There's plenty to be built;
 
 </li>
 
@@ -738,7 +734,7 @@ Global module
 - <twemoji-ninja /> Now available transparently on all our Nuxt projects;
 - <twemoji-rocket /> Shipped to npm, give it a try yourself:
   ```bash
-  npm install --global @lihbr/module-docs
+  npm install --global @lihbr/module-docs && module-docs
   ```
 
 </v-clicks>
@@ -806,7 +802,7 @@ layout: v-center
 
 <div v-click>
 
-<twemoji-megaphone class="inline mb-2" /> Twitter:
+<twemoji-megaphone class="inline mb-2" /> &nbsp;Twitter:
 
 #### -> [lucie.red/twitter](https://lucie.red/twitter)
 

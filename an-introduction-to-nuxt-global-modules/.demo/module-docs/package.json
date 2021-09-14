@@ -1,0 +1,32 @@
+{
+	"name": "@lihbr/module-docs-nuxtnation",
+	"version": "0.0.1",
+	"description": "A demo global module used during my talk: \"An Introduction to Nuxt Global Modules\"",
+	"keywords": [
+		"nuxt",
+		"module",
+		"nuxt-module",
+		"global-module"
+	],
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/lihbr/nuxt-demo-global-modules.git"
+	},
+	"license": "MIT",
+	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
+	"main": "src/module.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"node-fetch": "^2.6.2",
+		"rc9": "^1.2.0"
+	},
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
