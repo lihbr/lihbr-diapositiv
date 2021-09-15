@@ -46,10 +46,10 @@ export default async function moduleDocs() {
 		console.log(lines.join("\n"));
 	};
 
-	// 5. Print modules info at each Nuxt reload
+	// 4. Print modules info at each Nuxt reload
 	this.nuxt.hook("bundler:done", printModulesInfo);
 
-	// 6. Print modules info once
+	// 5. Print modules info once
 	printModulesInfo();
 }
 

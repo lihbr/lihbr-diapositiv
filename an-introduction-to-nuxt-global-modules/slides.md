@@ -387,7 +387,7 @@ layout: center
 
 ---
 
-## What are global modules?
+## What are Nuxt global modules?
 
 --- slides
 layout: v-center
@@ -583,7 +583,7 @@ layout: v-center
 
 <v-click>
 
-An hypothetic Google Analytics module:
+A hypothetical Google Analytics module:
 
 </v-click>
 
