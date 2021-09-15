@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "a-nuxt-application"
+		},
+		{
+			"path": "module-docs"
+		}
+	],
+	"settings": {
+		"github.copilot.enable": {
+			"*": false
+		},
+	}
+}

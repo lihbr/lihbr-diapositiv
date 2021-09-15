@@ -36,3 +36,6 @@ coverage
 !.vscode/tasks.json
 !.vscode/launch.json
 *.code-workspace
+
+# custom
+!*/.demo/*.code-workspace

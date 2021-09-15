@@ -204,9 +204,10 @@ layout: v-center
 
 ---
 
+- <twemoji-baguette-bread /> I'm from Paris;
+
 <v-clicks>
 
-- <twemoji-baguette-bread /> I'm from Paris;
 - <twemoji-woman-student /> Computer Science Student;
 - <logos-prismic-icon /> Developer Experience Engineer at Prismic;
 - <logos-nuxt-icon /> Proud Nuxt ambassador;
