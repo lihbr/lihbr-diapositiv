@@ -84,12 +84,12 @@ layout: v-center
 
 ---
 
-- <twemoji-rocket /> Triggers lights on Nuxt startup?
+- <twemoji-rocket /> Triggers lights on Nuxt startup
 
 <v-clicks>
 
-- <twemoji-vertical-traffic-light /> Triggers other lights when ready?
-- <twemoji-fire /> And maybe some other upon error?
+- <twemoji-vertical-traffic-light /> Triggers other lights when ready
+- <twemoji-fire /> And maybe some other upon error
 
 </v-clicks>
 
@@ -102,12 +102,12 @@ layout: v-center
 
 ---
 
-- <twemoji-check-mark-button /> That's possible;
+- <twemoji-check-mark-button /> That's possible
 
 <v-clicks>
 
-- <twemoji-party-popper /> It's a fun concept;
-- <twemoji-megaphone /> Would make for a great tweet.
+- <twemoji-party-popper /> It's a fun concept
+- <twemoji-megaphone /> Would make for a great tweet and video
 
 </v-clicks>
 
@@ -154,8 +154,8 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-robot /> GitHub CI;
-- <twemoji-technologist /> Most of my coworkers.
+- <twemoji-robot /> GitHub CI
+- <twemoji-technologist /> Most of my coworkers
 
 </v-clicks>
 
@@ -177,9 +177,9 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-prohibited /> No impact on the codebase;
-- <twemoji-wrench /> Configured once;
-- <twemoji-globe-with-meridians /> Installed globally.
+- <twemoji-prohibited /> No impact on the codebase
+- <twemoji-wrench /> Configured once
+- <twemoji-globe-with-meridians /> Installed globally
 
 </v-clicks>
 
@@ -197,21 +197,21 @@ layout: cover
 
 ## I'm Lucie Haberer
 
-a.k.a. lihbr
+_a.k.a. lihbr_
 
 --- slides
 layout: v-center
 
 ---
 
-- <twemoji-baguette-bread /> I'm from Paris;
+- <twemoji-baguette-bread /> I'm from Paris
 
 <v-clicks>
 
-- <twemoji-woman-student /> Computer Science Student;
-- <logos-prismic-icon /> Developer Experience Engineer at Prismic;
-- <logos-nuxt-icon /> Proud Nuxt ambassador;
-- <twemoji-1st-place-medal /> First talk ever.
+- <twemoji-woman-student /> Computer Science Student
+- <logos-prismic-icon /> Developer Experience Engineer at Prismic
+- <logos-nuxt-icon /> Proud Nuxt ambassador
+- <twemoji-1st-place-medal /> First talk ever
 
 </v-clicks>
 
@@ -363,9 +363,9 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-mobile-phone /> “There's a module for that”;
-- <twemoji-gear /> Modules are registered inside Nuxt config;
-- <twemoji-building-construction /> Modules are functions.
+- <twemoji-mobile-phone /> “There's a module for that”
+- <twemoji-gear /> Modules are registered inside Nuxt config
+- <twemoji-building-construction /> Modules are functions
 
 </v-clicks>
 
@@ -380,7 +380,7 @@ layout: cover
 
 ## Nuxt Global Modules
 
-(finally)
+<small>(finally)</small>
 
 --- slides
 layout: center
@@ -398,43 +398,43 @@ clicks: 6
 <ul>
 <li v-if="$slidev.nav.clicks <= 1" :class="{ invisible: $slidev.nav.clicks < 1 }">
 
-<twemoji-mobile-phone /> “There's a module for that”;
+<twemoji-mobile-phone /> “There's a module for that”
 
 <br />
 
 </li>
 <li v-if="$slidev.nav.clicks > 1">
 
-<twemoji-prohibited /> ~~“There's a module for that”;~~
+<twemoji-prohibited /> ~~“There's a module for that”~~
 
-- <twemoji-check-mark-button /> There's plenty to be built;
+- <twemoji-check-mark-button /> There's plenty to be built
 
 </li>
 
 <li v-if="$slidev.nav.clicks <= 3" :class="{ invisible: $slidev.nav.clicks < 3 }">
 
-<twemoji-gear /> Modules are registered inside Nuxt config;
+<twemoji-gear /> Modules are registered inside Nuxt config
 
 <div class="invisible">
 
-- <twemoji-check-mark-button /> Global modules are registered and configured globally (once);
+- <twemoji-check-mark-button /> Global modules are registered and configured globally (once)
 
 </div>
 
 </li>
 <li v-if="$slidev.nav.clicks > 3">
 
-<twemoji-prohibited /> ~~Modules are registered inside Nuxt config;~~
+<twemoji-prohibited /> ~~Modules are registered inside Nuxt config~~
 
-- <twemoji-check-mark-button /> Global modules are registered and configured globally (once);
+- <twemoji-check-mark-button /> Global modules are registered and configured globally (once)
 
 </li>
 
 <li v-if="$slidev.nav.clicks <= 5" :class="{ invisible: $slidev.nav.clicks < 5 }">
-	<twemoji-building-construction /> Modules are functions.
+	<twemoji-building-construction /> Modules are functions
 </li>
 <li v-if="$slidev.nav.clicks > 5">
-	<twemoji-check-mark-button /> Global modules are functions.
+	<twemoji-check-mark-button /> Global modules are functions
 </li>
 </ul>
 
@@ -447,13 +447,13 @@ layout: v-center
 
 ---
 
-- <twemoji-construction /> There's plenty to be built;
-- <twemoji-gear /> Global modules are registered and configured globally (once);
-- <twemoji-building-construction /> Global modules are functions;
+- <twemoji-construction /> There's plenty to be built
+- <twemoji-gear /> Global modules are registered and configured globally (once)
+- <twemoji-building-construction /> Global modules are functions
 
 <v-click>
 
-- <twemoji-prohibited /> Global modules have no impact on the codebase nor the final website.
+- <twemoji-prohibited /> Global modules have no impact on the codebase nor the final website
 
 </v-click>
 
@@ -494,7 +494,7 @@ cols: 1
 
 ---
 
-A Chrome extension personalizes your experience on every website you visit;
+A Chrome extension personalizes your experience on every website you visit.
 
 <v-click>
 
@@ -540,11 +540,11 @@ layout: v-center
 
 ---
 
-- Having to install it on every project felt off;
+- Having to install it on every project felt off
 
 <v-click>
 
-- Wouldn't have used it so extensively if so.
+- Wouldn't have used it so extensively if so
 
 </v-click>
 
@@ -567,8 +567,8 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-warning /> A global module that warns you when there are updates to your other Nuxt modules?
-- <twemoji-chart-increasing /> A global module that gives you performance statistics about your current Nuxt project?
+- <twemoji-warning /> A global module that warns you when there are updates to your other Nuxt modules.
+- <twemoji-chart-increasing /> A global module that gives you performance statistics about your current Nuxt project.
 
 </v-clicks>
 
@@ -589,9 +589,9 @@ A hypothetical Google Analytics module:
 
 <v-clicks>
 
-- <twemoji-prohibited /> Needs to impact your site directly;
-- <twemoji-prohibited /> Requires a per-project/shared configuration;
-- <twemoji-prohibited /> Overall is just not about personalization.
+- <twemoji-prohibited /> Needs to impact your site directly
+- <twemoji-prohibited /> Requires a per-project/shared configuration
+- <twemoji-prohibited /> Overall is just not about personalization
 
 </v-clicks>
 
@@ -608,7 +608,7 @@ layout: cover
 
 ## Let's Build One<br />Together!
 
-...and jump to some code~
+<small>...and jump to some code~</small>
 
 </v-click>
 
@@ -635,11 +635,11 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-house-with-garden /> Lives in your home directory: `~/.nuxtrc`;
-- <twemoji-bar-chart /> Used by Nuxt to store telemetry preferences;
-- <twemoji-gear /> Uses the same interface as `nuxt.config.js`;
-- <twemoji-japanese-castle /> Used as a base to resolve Nuxt configs;
-- <twemoji-japanese-service-charge-button /> Uses RC syntax instead of JSON/JavaScript.
+- <twemoji-house-with-garden /> Lives in your home directory: `~/.nuxtrc`
+- <twemoji-bar-chart /> Used by Nuxt to store telemetry preferences
+- <twemoji-gear /> Uses the same interface as `nuxt.config.js`
+- <twemoji-japanese-castle /> Used as a base to resolve Nuxt configs
+- <twemoji-japanese-service-charge-button /> Uses RC syntax instead of JSON/JavaScript
 
 </v-clicks>
 
@@ -666,10 +666,10 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-house-with-garden /> Lives in our home directory: `~/.nuxtrc`;
-- <twemoji-japanese-castle /> Used as a base to resolve Nuxt configs;
-- <twemoji-pencil /> Easily editable by a script using [`rc9`](https://www.npmjs.com/package/rc9);
-- <twemoji-woman-running /> The go-to way to register global modules.
+- <twemoji-house-with-garden /> Lives in our home directory: `~/.nuxtrc`
+- <twemoji-japanese-castle /> Used as a base to resolve Nuxt configs
+- <twemoji-pencil /> Easily editable by a script using [`rc9`](https://www.npmjs.com/package/rc9)
+- <twemoji-woman-running /> The go-to way to register global modules
 
 </v-clicks>
 
@@ -682,7 +682,7 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-receipt /> Are basically Node.js scripts;
+- <twemoji-receipt /> Are basically Node.js scripts
 - <twemoji-file-cabinet /> Are shipped using the `bin` config of `package.json`:
   ```json
   {
@@ -732,8 +732,9 @@ Global module
 
 <v-clicks>
 
-- <twemoji-ninja /> Now available transparently on all our Nuxt projects;
+- <twemoji-ninja /> Now available transparently on all our Nuxt projects
 - <twemoji-rocket /> Shipped to npm, give it a try yourself:
+
   ```bash
   npm install --global @lihbr/module-docs && module-docs
   ```
@@ -762,12 +763,12 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-straight-ruler /> Are about personalization;
-- <twemoji-prohibited /> Have no impact on your codebase nor the final website;
-- <twemoji-hammer-and-wrench /> Are built just like regular modules;
-- <twemoji-globe-with-meridians /> Are registered and configured globally through the `.nuxtrc` file;
-- <twemoji-ninja /> Work transparently across all our Nuxt projects;
-- <twemoji-control-knobs /> A simple CLI makes for a great interface to enable, disable, and configure a global module.
+- <twemoji-straight-ruler /> Are about personalization
+- <twemoji-prohibited /> Have no impact on your codebase nor the final website
+- <twemoji-hammer-and-wrench /> Are built just like regular modules
+- <twemoji-globe-with-meridians /> Are registered and configured globally through the `.nuxtrc` file
+- <twemoji-ninja /> Work transparently across all our Nuxt projects
+- <twemoji-control-knobs /> A simple CLI makes for a great interface to enable, disable, and configure a global module
 
 </v-clicks>
 
@@ -785,7 +786,7 @@ layout: v-center
 
 ---
 
-<div class="mb-6">
+<div>
 
 <twemoji-books class="inline mb-2" /> &nbsp;Everything from this talk & more:
 
@@ -793,7 +794,7 @@ layout: v-center
 
 </div>
 
-<div class="mb-6" v-click>
+<div class="mt-6" v-click>
 
 <twemoji-newspaper class="inline mb-2" /> &nbsp;My blog:
 
@@ -801,7 +802,7 @@ layout: v-center
 
 </div>
 
-<div v-click>
+<div class="mt-6" v-click>
 
 <twemoji-megaphone class="inline mb-2" /> &nbsp;Twitter:
 
@@ -819,3 +820,9 @@ layout: cover
 ---
 
 # Thanks!
+
+<small>
+
+[lucie.red/nuxtnation](https://lucie.red/nuxtnation) — [lucie.red](https://lucie.red) — [lucie.red/twitter](https://lucie.red/twitter)
+
+</small>
