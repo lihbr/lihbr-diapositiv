@@ -14,7 +14,6 @@ export default async function moduleDocs() {
 		allModuleManifests = await res.json();
 	} catch (err) {
 		console.error("Failed to init Module Docs module:", err);
-
 		return;
 	}
 
@@ -33,14 +32,18 @@ export default async function moduleDocs() {
 	const printModulesInfo = () => {
 		const lines = [];
 
-		lines.push(chalk.blueBright("📚 Modules Docs:\n"));
-		registeredModuleManifests.forEach((manifest) => {
-			lines.push(
-				`${chalk.yellow(manifest.npm)} (${
-					manifest.category
-				}): ${chalk.cyanBright(manifest.website)}`,
-			);
-		});
+		lines.push("📚 Modules Docs:\n");
+		if (registeredModuleManifests.length === 0) {
+			lines.push(chalk.blackBright("(no modules found)"));
+		} else {
+			registeredModuleManifests.forEach((manifest) => {
+				lines.push(
+					`${chalk.yellow(manifest.npm)} (${
+						manifest.category
+					}): ${chalk.cyanBright(manifest.website)}`,
+				);
+			});
+		}
 		lines.push("");
 
 		console.log(lines.join("\n"));

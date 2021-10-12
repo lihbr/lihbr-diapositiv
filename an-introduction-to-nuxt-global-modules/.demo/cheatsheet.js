@@ -39,3 +39,6 @@ D:\Libraries\Desktop\global-modules-intro\module-docs
 "bin": {
 	"module-docs": "bin/cli.js"
 },
+
+npm install --global @lihbr/module-docs
+npm uninstall --global @lihbr/module-docs
