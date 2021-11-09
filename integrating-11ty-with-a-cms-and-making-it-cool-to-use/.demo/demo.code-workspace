@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "an-11ty-application"
+		},
+	],
+	"settings": {
+		"github.copilot.enable": {
+			"*": false
+		},
+	}
+}

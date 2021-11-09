@@ -1,0 +1,19 @@
+{
+	"name": "an-11ty-application",
+	"version": "0.0.0",
+	"private": true,
+	"main": ".eleventy.js",
+	"types": ".eleventy.d.ts",
+	"scripts": {
+		"dev": "cross-env DEBUG=Eleventy:Demo eleventy --serve",
+		"build": "cross-env DEBUG=Eleventy:Demo eleventy"
+	},
+	"dependencies": {
+		"your-favorite-cms": "^0.0.0",
+		"debug": "^4.3.2"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.0 || ^1.0.0-beta || ^1.0.0-canary",
+		"cross-env": "^7.0.3"
+	}
+}

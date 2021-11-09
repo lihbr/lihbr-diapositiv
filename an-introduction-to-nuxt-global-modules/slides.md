@@ -262,7 +262,7 @@ centered: true
 
 <div class="heading-h2 heading-reset" v-click>-></div>
 
-### [@nuxtjs/pwa](https://pwa.nuxtjs.org/)
+### [@nuxtjs/pwa](https://pwa.nuxtjs.org)
 
 </v-click>
 
@@ -272,7 +272,7 @@ centered: true
 
 <div class="heading-h2 heading-reset" >-></div>
 
-### [@nuxtjs/prismic](https://prismic.nuxtjs.org/)
+### [@nuxtjs/prismic](https://prismic.nuxtjs.org)
 
 </v-click>
 

@@ -1,0 +1,12 @@
+{
+	"name": "demo",
+	"version": "1.0.0",
+	"private": true,
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"workspaces": [
+		"your-favorite-cms",
+		"an-11ty-application"
+	]
+}
