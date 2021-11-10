@@ -12,7 +12,7 @@ module.exports = (eleventyConfig) => {
 		return data;
 	})();
 
-	eleventyConfig.addGlobalData("cms", cmsData);
+	eleventyConfig.addGlobalData("cms", () => cmsData);
 };
 
 /* html */ `

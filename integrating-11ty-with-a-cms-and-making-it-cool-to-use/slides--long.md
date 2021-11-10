@@ -506,31 +506,134 @@ layout: center
 
 ---
 
-![11ty Prismic plugin GitHub](/eleventyPluginPrismic-light.png)
-![11ty Prismic plugin GitHub](/eleventyPluginPrismic-dark.png)
+## Not so fast <twemoji-index-pointing-up class="inline" />
 
 --- slides
-layout: v-center
+layout: center
 
 ---
 
-### You can make your plugin nicer with:
-
-<v-clicks>
-
-- <twemoji-loudspeaker /> The [debug](https://www.11ty.dev/docs/debugging) package for logging things
-- <twemoji-control-knobs /> Options to configure it
-- <twemoji-pager /> Shortcodes to help with templating
-- <twemoji-japanese-service-charge-button /> Type definitions with [TSDoc](https://tsdoc.org)
-
-</v-clicks>
+![11ty Prismic plugin GitHub](/eleventyPluginPrismic-light.png)
+![11ty Prismic plugin GitHub](/eleventyPluginPrismic-dark.png)
 
 --- slides
 layout: cover
 
 ---
 
-## Integrating 11ty With a CMS Takeaways
+## Tips on Creating a Plugin
+
+--- slides
+layout: v-center
+
+---
+
+### 1. Using the [debug](https://www.npmjs.com/package/debug) package
+
+<ul>
+
+<li v-click>
+
+<twemoji-1st-place-medal /> [Preferred 11ty way to log things](https://www.11ty.dev/docs/debugging)
+
+</li>
+<li v-click>
+
+<twemoji-desktop-computer /> From our example:
+
+```javascript {1,8}
+const debug = require("debug")("Eleventy:Demo");
+const { getCMSData } = require("your-favorite-cms");
+
+module.exports = (eleventyConfig) => {
+	const cmsData = (async () => {
+		const data = await getCMSData();
+
+		debug(data);
+
+		return data;
+	})();
+
+	eleventyConfig.addGlobalData("cms", () => cmsData);
+};
+```
+
+</li>
+
+</ul>
+
+--- slides
+layout: v-center
+
+---
+
+### 2. Allowing for options if necessary
+
+<v-clicks>
+
+- <twemoji-anger-symbol /> Pretty crucial with CMSs
+- <twemoji-2nd-place-medal /> Comes as a second argument to the config function
+
+  ```javascript
+  module.exports = (eleventyConfig, pluginOptions) => {
+  	/* ... */
+  };
+  ```
+
+</v-clicks>
+
+--- slides
+layout: v-center
+
+---
+
+### 3. Providing shortcodes
+
+<v-clicks>
+
+- <twemoji-bookmark /> `eleventyConfig` comes with more than just `addGlobalData()`
+
+  ```javascript
+  module.exports = (eleventyConfig, pluginOptions) => {
+  	eleventyConfig.addShortcode("helloWorld", (name = "world") => {
+  		return `Hello ${name}!`;
+  	});
+
+  	/* ... */
+  };
+  ```
+
+- <twemoji-call-me-hand /> Handy to help template specific data structures
+
+</v-clicks>
+
+--- slides
+layout: v-center
+
+---
+
+### 4. Shipping type definitions with [TSDoc](https://tsdoc.org)
+
+<v-clicks>
+
+- <twemoji-chart-increasing /> A bit advanced
+- <twemoji-factory /> Not mandatory to have a TypeScript build pipeline
+
+</v-clicks>
+
+--- slides
+layout: center
+
+---
+
+## &lt;live-coding /&gt;
+
+--- slides
+layout: cover
+
+---
+
+## Takeaways
 
 --- slides
 layout: v-center
@@ -560,13 +663,24 @@ layout: v-center
 
 </li>
 
-<li v-click="5">
-
-<twemoji-page-facing-up /> Plugins can simply be an 11ty configuration file
-
-</li>
-
 </ul>
+
+--- slides
+layout: v-center
+
+---
+
+### Creating plugins:
+
+<v-clicks>
+
+- <twemoji-page-facing-up /> Plugins can be nothing more than an 11ty configuration file
+- <twemoji-loudspeaker /> Use the [debug](https://www.11ty.dev/docs/debugging) package for logging things
+- <twemoji-control-knobs /> Allow for options with the 2nd configuration argument
+- <twemoji-pager /> `addGlobalData`, `addShortcode` and many more through the `eleventyConfig` object
+- <twemoji-japanese-service-charge-button /> Providing type definitions with [TSDoc](https://tsdoc.org) is a nice touch
+
+</v-clicks>
 
 --- slides
 layout: cover
