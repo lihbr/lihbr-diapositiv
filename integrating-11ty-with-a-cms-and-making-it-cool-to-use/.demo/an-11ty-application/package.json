@@ -3,7 +3,6 @@
 	"version": "0.0.0",
 	"private": true,
 	"main": ".eleventy.js",
-	"types": ".eleventy.d.ts",
 	"scripts": {
 		"dev": "cross-env DEBUG=Eleventy:Demo eleventy --serve",
 		"build": "cross-env DEBUG=Eleventy:Demo eleventy"
