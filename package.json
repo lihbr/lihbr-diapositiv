@@ -31,7 +31,10 @@
 	"dependencies": {
 		"@slidev/cli": "0.31.4",
 		"playwright-chromium": "1.22.1",
-		"slidev-theme-diapositiv": "0.1.0"
+		"slidev-theme-diapositiv": "0.1.0",
+		"@iconify-json/logos": "1.1.5",
+		"@iconify-json/mdi": "1.1.13",
+		"@iconify-json/twemoji": "1.1.4"
 	},
 	"devDependencies": {
 		"@iconify-json/logos": "1.1.5",
