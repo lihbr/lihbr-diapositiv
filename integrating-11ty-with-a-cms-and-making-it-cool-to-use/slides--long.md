@@ -17,7 +17,7 @@ info: |
 
   <br />
 
-  My blog:
+  Personal site:
 
   **-> [lucie.red](https://lucie.red)**
 

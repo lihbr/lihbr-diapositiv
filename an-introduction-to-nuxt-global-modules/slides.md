@@ -17,7 +17,7 @@ info: |
 
   <br />
 
-  My blog:
+  Personal site:
 
   **-> [lucie.red](https://lucie.red)**
 
@@ -289,7 +289,7 @@ layout: v-center
 - Storyblok -> [nuxt-storyblok](https://github.com/storyblok/storyblok-nuxt)
 - Strapi -> [@nuxtjs/strapi](https://strapi.nuxtjs.org)
 - Sanity -> [@nuxtjs/sanity](https://sanity.nuxtjs.org)
-- [And more CMS modules...](https://modules.nuxtjs.org/?orderBy=desc#CMS)
+- [And more CMS modules...](https://modules.nuxtjs.org/?orderBy=desc&category=CMS)
 
 --- slides
 layout: center
