@@ -221,10 +221,9 @@ layout: v-center
 Nuxt Modules are registered inside your Nuxt config file:
 
 <!-- prettier-ignore-start -->
-```javascript {all|6|7|1,8|9-12|6,15}
+```typescript {all|5|6|1,7|8-11|5,14}
 import thirdModule from "third-module";
 
-// nuxt.config.js
 export default {
 	modules: [
 		"@nuxtjs/pwa",
@@ -421,13 +420,13 @@ cols: 1
 
 ---
 
-<twemoji-bento-box class="inline" /> &nbsp;Nuxt modules can do pretty much anything.
+<twemoji-bento-box /> &nbsp;Nuxt modules can do pretty much anything.
 
 <v-click>
 
 -^
 
-<twemoji-building-construction class="inline" /> &nbsp;Abtract code from your different projects and share it reliably.
+<twemoji-building-construction /> &nbsp;Abtract code from your different projects and share it reliably.
 
 </v-click>
 
@@ -495,11 +494,11 @@ cols: 1
 
 ---
 
-<twemoji-heart-hands class="inline" /> &nbsp;Facilitate integration with the _(new or niche)_ tools you use.
+<twemoji-heart-hands /> &nbsp;Facilitate integration with the _(new or niche)_ tools you use.
 
 -^
 
-<twemoji-hammer-and-wrench class="inline" /> &nbsp;Craft modules for them, why not?
+<twemoji-hammer-and-wrench /> &nbsp;Craft modules for them, why not?
 
 --- slides
 layout: center
@@ -521,3 +520,393 @@ layout: cover
 ---
 
 ## Let’s Learn How to Create Nuxt 3 Modules!
+
+--- slides
+layout: v-center
+
+---
+
+What's new:
+
+<v-clicks>
+
+- <twemoji-japanese-service-charge-button /> First-class TypeScript support
+- <twemoji-classical-building /> Stronger structure
+- <twemoji-triangular-ruler /> Nicer developer experience and defaults
+
+</v-clicks>
+
+::before::
+
+### Let’s Learn How to Create Nuxt 3 Modules
+
+--- slides
+layout: center
+class: nuxiInit
+
+---
+
+<style>
+.slidev-layout.nuxiInit code {
+	font-size: 1.875rem;
+	padding-left: .25rem;
+	padding-right: .25rem;
+}
+</style>
+
+### Let's start with Nuxt 3 CLI:
+
+<br />
+
+`npx nuxi@latest init -t module vuejs-amsterdam`
+
+<br />
+
+<small>Then, we'll install dependencies...</small>
+
+--- slides
+layout: center
+
+---
+
+## &lt;live-coding /&gt;
+
+--- slides
+layout: v-center
+
+---
+
+### About our project:
+
+<v-clicks>
+
+- <twemoji-control-knobs /> Creating a module can be done with `nuxi init`
+- <twemoji-building-construction /> Modules come with new defaults and a bundler by Nuxt
+- <twemoji-toolbox /> `@nuxt/kit` is a set of helpers to develop Nuxt modules
+- <twemoji-japanese-service-charge-button /> Modules are TypeScript by default
+- <twemoji-factory /> Modules are defined through `defineNuxtModules` from `@nuxt/kit`
+
+</v-clicks>
+
+--- slides
+layout: center
+
+---
+
+## &lt;live-coding /&gt;
+
+--- slides
+layout: center
+
+---
+
+### That was 3 things you can do with modules
+
+--- slides
+layout: v-center
+
+---
+
+- <twemoji-cyclone /> Adding auto-imports for composables
+
+<v-clicks>
+
+- <twemoji-bento-box /> Adding auto-imports for components
+- <twemoji-abacus /> And many more...
+
+</v-clicks>
+
+--- slides
+layout: center
+
+---
+
+## <twemoji-index-pointing-up /> What about hooks?
+
+--- slides
+layout: items
+cols: 1
+
+---
+
+<twemoji-window /> &nbsp;Hooks are windows to Nuxt internals to which you can hook to.
+
+<v-click>
+
+-^
+
+<twemoji-person-running /> &nbsp;They allow you to get information about, and alter Nuxt behaviors.
+
+<v-click>
+
+<twemoji-rocket /> &nbsp;They are a bit advanced, but really what make Nuxt modules capable of anything.
+
+</v-click>
+
+</v-click>
+
+::before::
+
+### What about hooks?
+
+--- slides
+layout: v-center
+
+---
+
+<!-- prettier-ignore-start -->
+```typescript {10-14,18-20|18-20|10-14|all}
+import { defineNuxtModule } from "@nuxt/kit";
+
+export default defineNuxtModule({
+	meta: { /* ... */ },
+	defaults: { /* ... */ },
+	hooks: {
+		"generate:extendRoutes": (routes) => {
+			console.info(`Generating ${routes.length} routes`);
+		},
+	},
+	setup(options, nuxt) {
+		/* ... */
+
+		nuxt.hook("generate:extendRoutes", (routes) => {
+			console.info(`Generating ${routes.length} routes`);
+		});
+	},
+});
+```
+<!-- prettier-ignore-end -->
+
+--- slides
+layout: v-center
+
+---
+
+### About writing modules:
+
+<v-clicks>
+
+- <twemoji-ferris-wheel /> Any code can run in the module `setup` function
+- <twemoji-toolbox /> `@nuxt/kit` provides a lot of utilities for common tasks
+- <twemoji-sunrise-over-mountains /> The `runtime` directory holds assets made available by the module
+- <twemoji-hook /> Hooks are windows to Nuxt internals, that can react to, and alter them
+
+</v-clicks>
+
+--- slides
+layout: center
+
+---
+
+## So we know how to module, what now?
+
+--- slides
+layout: v-center
+
+---
+
+- <twemoji-newspaper /> Share our module on npm: pick a version + `npm publish`
+
+<v-clicks>
+
+- <twemoji-alembic /> Let's test it at some point!
+
+  <v-click>
+
+  - <twemoji-alarm-clock /> Nuxt Test Utils still on their way~
+
+  </v-click>
+
+- <twemoji-abacus /> Streamline publishing process [Standard Version CLI](https://github.com/conventional-changelog/standard-version)
+
+</v-clicks>
+
+::before::
+
+### So we know how to module, what now?
+
+--- slides
+layout: center
+clicks: 1
+
+---
+
+<h2 v-if="$slidev.nav.clicks < 1">That's...</h2>
+<h2 v-if="$slidev.nav.clicks >= 1">That’s not all folks</h2>
+<small v-click="1">I lied...</small>
+
+--- slides
+layout: cover
+
+---
+
+## Extra Perks of Learning<br />Nuxt Modules
+
+--- slides
+layout: v-center
+
+---
+
+- <twemoji-diving-mask /> Deeper understanding of Nuxt behaviors and internals and easier issue troubleshooting.
+
+<v-clicks>
+
+- <twemoji-light-bulb /> Nuxt itself is partly made of modules and relies on module APIs.
+
+</v-clicks>
+
+::before::
+
+### Extra Perks of Learning Nuxt Modules
+
+--- slides
+layout: v-center
+
+---
+
+Being familiar with Nuxt module structure allows to:
+
+<v-clicks>
+
+- <twemoji-card-file-box /> Have a better understanding of the module you use
+
+</v-clicks>
+
+<br />
+
+::before::
+
+### Extra Perks of Learning Nuxt Modules
+
+--- slides
+layout: v-center
+
+---
+
+<!-- prettier-ignore-start -->
+```typescript {all|9-15}
+import { defineNuxtModule } from "@nuxt/kit";
+
+export default defineNuxtModule({
+	meta: { /* ... */ },
+	defaults: { /* ... */ },
+	setup(options, nuxt) {
+		/* ... */
+
+		// Inject options via virtual template
+		nuxt.options.alias['#color-mode-options'] = addTemplate({
+			filename: 'color-mode-options.mjs',
+			getContents: () => Object.entries(options).map(([key, value]) =>
+				`export const ${key} = ${JSON.stringify(value, null, 2)}
+			`).join('\n')
+		}).dst
+
+		/* ... */
+	},
+});
+```
+<!-- prettier-ignore-end -->
+
+<footnote>
+
+Source: [github.com/nuxt-community/color-mode-module](https://github.com/nuxt-community/color-mode-module/blob/07b261f/src/module.ts#L37-L43)
+
+</footnote>
+
+::before::
+
+### Extra Perks of Learning Nuxt Modules
+
+--- slides
+layout: v-center
+
+---
+
+Being familiar with Nuxt module structure allows to:
+
+- <twemoji-card-file-box /> Have a better understanding of the module you use
+- <twemoji-technologist /> Contribute to the ecosystem
+
+  <v-clicks>
+
+  - <twemoji-anger-symbol /> Found a bug? You can fix it!
+  - <twemoji-drooling-face /> Craving for a feature? Open a PR~
+
+  </v-clicks>
+
+::before::
+
+### Extra Perks of Learning Nuxt Modules
+
+--- slides
+layout: center
+
+---
+
+## Nuxt modules are an excellent way to get started and comfortable with open-source!
+
+<small v-click>All community modules -> [modules.nuxtjs.org](https://modules.nuxtjs.org)</small>
+
+--- slides
+layout: cover
+
+---
+
+# Nuxt 3 Modules and Open-Source
+
+_Make your own, for your team or the whole community._
+
+--- slides
+layout: v-center
+
+---
+
+### Nuxt modules:
+
+<v-clicks>
+
+- <twemoji-snow-capped-mountain /> Are a way to extend Nuxt functionalities endlessly
+- <twemoji-astonished-face /> You can make Nuxt modules, for your team or the whole community
+- <twemoji-triangular-ruler /> Modules are nicely structured and come with an improved developer experience in Nuxt 3
+- <twemoji-woman-student /> Learning that structure gives you a better understanding of Nuxt
+- <twemoji-green-heart /> Allows you to get involved in the community
+
+</v-clicks>
+
+--- slides
+layout: v-center
+
+---
+
+<div>
+
+<twemoji-books class="inline mb-2" /> &nbsp;Everything from this talk & more:
+
+#### -> [lucie.red/amsterdam](https://lucie.red/amsterdam)
+
+</div>
+
+<div class="mt-6" v-click>
+
+<twemoji-megaphone class="inline mb-2" /> &nbsp;Twitter:
+
+#### -> [lucie.red/twitter](https://lucie.red/twitter)
+
+</div>
+
+::before::
+
+### All the Info
+
+--- slides
+layout: cover
+
+---
+
+# Thanks!
+
+<small>
+
+[lucie.red/amsterdam](https://lucie.red/amsterdam) — [lucie.red/twitter](https://lucie.red/twitter)
+
+</small>
