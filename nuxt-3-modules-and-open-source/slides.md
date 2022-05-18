@@ -558,7 +558,7 @@ class: nuxiInit
 
 <br />
 
-`npx nuxi@latest init -t module vuejs-amsterdam`
+`npx nuxi@latest init -t module my-module`
 
 <br />
 
