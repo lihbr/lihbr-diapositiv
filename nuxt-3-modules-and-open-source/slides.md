@@ -655,7 +655,7 @@ layout: v-center
 ---
 
 <!-- prettier-ignore-start -->
-```typescript {10-14,18-20|18-20|10-14|all}
+```typescript {6-10,14-16|14-16|6-10|all}
 import { defineNuxtModule } from "@nuxt/kit";
 
 export default defineNuxtModule({
@@ -702,24 +702,29 @@ layout: center
 
 --- slides
 layout: v-center
+clicks: 3
 
 ---
 
 - <twemoji-newspaper /> Share our module on npm: pick a version + `npm publish`
 
-<v-clicks>
+<v-click at=1>
 
 - <twemoji-alembic /> Let's test it at some point!
 
-  <v-click>
+  <v-click at="2">
 
   - <twemoji-alarm-clock /> Nuxt Test Utils still on their way~
 
   </v-click>
 
+</v-click>
+
+<v-click at="3">
+
 - <twemoji-abacus /> Streamline publishing process [Standard Version CLI](https://github.com/conventional-changelog/standard-version)
 
-</v-clicks>
+</v-click>
 
 ::before::
 
