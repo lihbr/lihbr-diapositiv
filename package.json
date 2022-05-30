@@ -29,7 +29,7 @@
 		"node": ">=16.0.0"
 	},
 	"dependencies": {
-		"@slidev/cli": "0.32.3",
+		"@slidev/cli": "0.31.4",
 		"playwright-chromium": "1.22.2",
 		"slidev-theme-diapositiv": "0.1.1",
 		"@iconify-json/logos": "1.1.5",

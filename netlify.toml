@@ -10,7 +10,7 @@
 
 # Enforce Node version
 [build.environment]
-	NODE_VERSION = "16.6.1"
+	NODE_VERSION = "16.15.0"
 
 [[redirects]]
   from = "/*"
