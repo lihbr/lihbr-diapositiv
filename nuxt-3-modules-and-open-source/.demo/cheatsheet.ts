@@ -16,5 +16,4 @@ const setup = (options, nuxt) => {
 	const plugin = resolve('./runtime/plugin.ts')
 	nuxt.options.build.transpile.push(plugin)
 	addPlugin(plugin)
-
 }
