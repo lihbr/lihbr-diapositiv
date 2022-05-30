@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     MyModule
   ],
   myModule: {
-    addPlugin: true
+    addPlugin: false
   }
 })
