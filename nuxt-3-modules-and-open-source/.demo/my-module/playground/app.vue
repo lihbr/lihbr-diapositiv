@@ -6,5 +6,5 @@
 
 <script setup>
 const nuxt = useNuxtApp()
-console.log(nuxt.$myModule)
+nuxt.$myModule && console.log(nuxt.$myModule)
 </script>
