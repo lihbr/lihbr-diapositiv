@@ -584,7 +584,7 @@ layout: v-center
 - <twemoji-building-construction /> Modules come with new defaults and a bundler by Nuxt
 - <twemoji-toolbox /> `@nuxt/kit` is a set of helpers to develop Nuxt modules
 - <twemoji-japanese-service-charge-button /> Modules are TypeScript by default
-- <twemoji-factory /> Modules are defined through `defineNuxtModules` from `@nuxt/kit`
+- <twemoji-factory /> Modules are defined through `defineNuxtModule` from `@nuxt/kit`
 
 </v-clicks>
 
