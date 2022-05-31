@@ -745,7 +745,7 @@ layout: cover
 
 ---
 
-## Extra Perks of Learning<br />Nuxt Modules
+## Extra Perks to Learning<br />Nuxt Modules
 
 --- slides
 layout: v-center
@@ -762,7 +762,7 @@ layout: v-center
 
 ::before::
 
-### Extra Perks of Learning Nuxt Modules
+### Extra Perks to Learning Nuxt Modules
 
 --- slides
 layout: v-center
@@ -781,7 +781,7 @@ Being familiar with Nuxt module structure allows to:
 
 ::before::
 
-### Extra Perks of Learning Nuxt Modules
+### Extra Perks to Learning Nuxt Modules
 
 --- slides
 layout: v-center
@@ -820,7 +820,7 @@ Source: [github.com/nuxt-community/color-mode-module](https://github.com/nuxt-co
 
 ::before::
 
-### Extra Perks of Learning Nuxt Modules
+### Extra Perks to Learning Nuxt Modules
 
 --- slides
 layout: v-center
@@ -841,7 +841,7 @@ Being familiar with Nuxt module structure allows to:
 
 ::before::
 
-### Extra Perks of Learning Nuxt Modules
+### Extra Perks to Learning Nuxt Modules
 
 --- slides
 layout: center
