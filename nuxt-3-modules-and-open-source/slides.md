@@ -662,15 +662,15 @@ export default defineNuxtModule({
 	meta: { /* ... */ },
 	defaults: { /* ... */ },
 	hooks: {
-		"generate:extendRoutes": (routes) => {
-			console.info(`Generating ${routes.length} routes`);
+		"pages:extend": (pages) => {
+			console.info(`Discovered ${pages.length} pages`);
 		},
 	},
 	setup(options, nuxt) {
 		/* ... */
 
-		nuxt.hook("generate:extendRoutes", (routes) => {
-			console.info(`Generating ${routes.length} routes`);
+		nuxt.hook("pages:extend", (pages) => {
+			console.info(`Discovered ${pages.length} pages`);
 		});
 	},
 });
