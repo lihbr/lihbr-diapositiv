@@ -773,7 +773,7 @@ Being familiar with Nuxt module structure allows to:
 
 <v-clicks>
 
-- <twemoji-card-file-box /> Have a better understanding of the module you use
+- <twemoji-card-file-box /> Have a better understanding of modules you use
 
 </v-clicks>
 
@@ -829,7 +829,7 @@ layout: v-center
 
 Being familiar with Nuxt module structure allows to:
 
-- <twemoji-card-file-box /> Have a better understanding of the module you use
+- <twemoji-card-file-box /> Have a better understanding of modules you use
 - <twemoji-technologist /> Contribute to the ecosystem
 
   <v-clicks>
