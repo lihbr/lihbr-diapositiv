@@ -289,7 +289,7 @@ layout: v-center
 ---
 
 - Content -> [@nuxt/content](https://content.nuxtjs.org)
-- Storyblok -> [nuxt-storyblok](https://github.com/storyblok/storyblok-nuxt)
+- Storyblok -> [@storyblok/nuxt](https://github.com/storyblok/storyblok-nuxt)
 - Strapi -> [@nuxtjs/strapi](https://strapi.nuxtjs.org)
 - Sanity -> [@nuxtjs/sanity](https://sanity.nuxtjs.org)
 - [And more CMS modules...](https://modules.nuxtjs.org/?orderBy=desc&category=CMS)
