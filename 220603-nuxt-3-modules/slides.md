@@ -289,7 +289,7 @@ layout: v-center
 ---
 
 - Content -> [@nuxt/content](https://content.nuxtjs.org)
-- Storyblok -> [nuxt-storyblok](https://github.com/storyblok/storyblok-nuxt)
+- Storyblok -> [@storyblok/nuxt](https://github.com/storyblok/storyblok-nuxt)
 - Strapi -> [@nuxtjs/strapi](https://strapi.nuxtjs.org)
 - Sanity -> [@nuxtjs/sanity](https://sanity.nuxtjs.org)
 - [And more CMS modules...](https://modules.nuxtjs.org/?orderBy=desc&category=CMS)
@@ -662,15 +662,15 @@ export default defineNuxtModule({
 	meta: { /* ... */ },
 	defaults: { /* ... */ },
 	hooks: {
-		"generate:extendRoutes": (routes) => {
-			console.info(`Generating ${routes.length} routes`);
+		"pages:extend": (pages) => {
+			console.info(`Discovered ${pages.length} pages`);
 		},
 	},
 	setup(options, nuxt) {
 		/* ... */
 
-		nuxt.hook("generate:extendRoutes", (routes) => {
-			console.info(`Generating ${routes.length} routes`);
+		nuxt.hook("pages:extend", (pages) => {
+			console.info(`Discovered ${pages.length} pages`);
 		});
 	},
 });
@@ -773,7 +773,7 @@ Being familiar with Nuxt module structure allows to:
 
 <v-clicks>
 
-- <twemoji-card-file-box /> Have a better understanding of the module you use
+- <twemoji-card-file-box /> Have a better understanding of modules you use
 
 </v-clicks>
 
@@ -835,7 +835,7 @@ layout: v-center
 
 Being familiar with Nuxt module structure allows to:
 
-- <twemoji-card-file-box /> Have a better understanding of the module you use
+- <twemoji-card-file-box /> Have a better understanding of modules you use
 - <twemoji-technologist /> Contribute to the ecosystem
 
   <v-clicks>
