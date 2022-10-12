@@ -777,7 +777,13 @@ Being familiar with Nuxt module structure allows to:
 
 </v-clicks>
 
-<br />
+<div class="invisible" aria-hidden="true">
+
+- foo
+  - bar
+	- baz
+
+</div>
 
 ::before::
 

@@ -29,25 +29,23 @@
 		"node": ">=16.0.0"
 	},
 	"dependencies": {
-		"@slidev/cli": "0.31.4",
-		"playwright-chromium": "1.22.2",
-		"slidev-theme-diapositiv": "0.1.1",
-		"@iconify-json/logos": "1.1.5",
-		"@iconify-json/mdi": "1.1.19",
-		"@iconify-json/twemoji": "1.1.4"
+		"@slidev/cli": "0.36.6",
+		"playwright-chromium": "1.27.1",
+		"slidev-theme-diapositiv": "0.1.2",
+		"@iconify-json/logos": "1.1.17",
+		"@iconify-json/mdi": "1.1.33",
+		"@iconify-json/twemoji": "1.1.5"
 	},
 	"devDependencies": {
-		"@iconify-json/logos": "1.1.5",
-		"@iconify-json/twemoji": "1.1.4",
-		"@typescript-eslint/eslint-plugin": "5.26.0",
-		"@typescript-eslint/parser": "5.26.0",
-		"@vue/eslint-config-typescript": "10.0.0",
-		"eslint": "8.16.0",
+		"@typescript-eslint/eslint-plugin": "5.40.0",
+		"@typescript-eslint/parser": "5.40.0",
+		"@vue/eslint-config-typescript": "11.0.2",
+		"eslint": "8.25.0",
 		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-prettier": "4.0.0",
-		"eslint-plugin-tsdoc": "0.2.16",
-		"eslint-plugin-vue": "9.0.1",
+		"eslint-plugin-prettier": "4.2.1",
+		"eslint-plugin-tsdoc": "0.2.17",
+		"eslint-plugin-vue": "9.6.0",
 		"husky": "8.0.1",
-		"prettier": "2.6.2"
+		"prettier": "2.7.1"
 	}
 }
