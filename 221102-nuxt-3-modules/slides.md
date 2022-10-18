@@ -136,7 +136,7 @@ cols: 3
 <div>
 <logos-nuxt-icon />
 
-Nuxt projects use<br />on average 7 modules
+Nuxt projects use<br />7 modules on average
 
 </div>
 
