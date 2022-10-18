@@ -118,7 +118,7 @@ Source: [modules.nuxtjs.org](https://modules.nuxtjs.org)
 
 --- slides
 layout: items
-cols: 2
+cols: 3
 
 ---
 
@@ -129,12 +129,18 @@ cols: 2
 
 </div>
 
-<div v-click>
+<v-clicks>
+
+<div class="self-center heading-h3 heading-reset">OR</div>
+
+<div>
 <logos-nuxt-icon />
 
 Nuxt projects use<br />on average 7 modules
 
 </div>
+
+</v-clicks>
 
 --- slides
 layout: center
