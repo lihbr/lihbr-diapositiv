@@ -584,7 +584,11 @@ layout: v-center
 
 <div>
 
-<twemoji-books class="inline mb-2" /> &nbsp;Everything from this talk & more:
+<p class="mb-2">
+
+<twemoji-books class="inline" /> &nbsp;Everything from this talk & more:
+
+</p>
 
 #### -> [lucie.red/11ties](https://lucie.red/11ties)
 
@@ -592,7 +596,11 @@ layout: v-center
 
 <div class="mt-6" v-click>
 
-<twemoji-newspaper class="inline mb-2" /> &nbsp;My blog:
+<p class="mb-2">
+
+<twemoji-newspaper class="inline" /> &nbsp;My blog:
+
+</p>
 
 #### -> [lucie.red](https://lucie.red)
 
@@ -600,7 +608,11 @@ layout: v-center
 
 <div class="mt-6" v-click>
 
-<twemoji-megaphone class="inline mb-2" /> &nbsp;Twitter:
+<p class="mb-2">
+
+<twemoji-megaphone class="inline" /> &nbsp;Twitter:
+
+</p>
 
 #### -> [lucie.red/twitter](https://lucie.red/twitter)
 

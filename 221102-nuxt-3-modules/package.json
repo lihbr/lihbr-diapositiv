@@ -1,0 +1,9 @@
+{
+	"name": "221102-nuxt-3-modules",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"@slidev/cli": "0.36.7",
+		"slidev-theme-diapositiv": "0.1.3"
+	}
+}

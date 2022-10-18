@@ -1,6 +1,6 @@
 {
 	"name": "lihbr-diapositiv",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Assets and sources for my talks and presentations",
 	"private": true,
 	"keywords": [
@@ -12,7 +12,7 @@
 		"type": "git",
 		"url": "ssh://git@github.com/lihbr/lihbr-diapositiv.git"
 	},
-	"license": "CC BY-NC-ND 4.0",
+	"license": "MIT, CC BY-NC-ND 4.0",
 	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
 	"type": "module",
 	"scripts": {
@@ -28,17 +28,12 @@
 	"engines": {
 		"node": ">=16.0.0"
 	},
-	"dependencies": {
-		"@slidev/cli": "0.36.6",
-		"playwright-chromium": "1.27.1",
-		"slidev-theme-diapositiv": "0.1.2",
-		"@iconify-json/logos": "1.1.17",
-		"@iconify-json/mdi": "1.1.33",
-		"@iconify-json/twemoji": "1.1.5"
-	},
+	"workspaces": [
+		"*-*"
+	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "5.40.0",
-		"@typescript-eslint/parser": "5.40.0",
+		"@typescript-eslint/eslint-plugin": "5.40.1",
+		"@typescript-eslint/parser": "5.40.1",
 		"@vue/eslint-config-typescript": "11.0.2",
 		"eslint": "8.25.0",
 		"eslint-config-prettier": "8.5.0",
@@ -46,6 +41,7 @@
 		"eslint-plugin-tsdoc": "0.2.17",
 		"eslint-plugin-vue": "9.6.0",
 		"husky": "8.0.1",
+		"playwright-chromium": "1.27.1",
 		"prettier": "2.7.1"
 	}
 }

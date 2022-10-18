@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/amsterdam](https://lucie.red/amsterdam)**
+  **-> [lucie.red/toronto](https://lucie.red/toronto)**
 
   <br />
 
@@ -37,18 +37,45 @@ layout: center
 
 ---
 
-<talk-timeline />
-
-::before::
-
-### Talking To You Today...
+## Let's start with some numbers, shall we?
 
 --- slides
 layout: center
 
 ---
 
-<img src="/phone.gif" alt="Phone gif" class="h-screen object-contain" />
+## 2 million
+
+<v-click>
+
+Number of <logos-nuxt-icon /> **Nuxt** downloads<br/>over the last 30 days
+
+<footnote>
+
+Source: [npmjs.com/package/nuxt](https://www.npmjs.com/package/nuxt)
+
+</footnote>
+
+</v-click>
+
+--- slides
+layout: center
+
+---
+
+## 15 million
+
+<v-click>
+
+Number of <logos-vue /> **Vue** downloads<br/>over the last 30 days
+
+<footnote>
+
+Source: [npmjs.com/package/vue](https://www.npmjs.com/package/vue)
+
+</footnote>
+
+</v-click>
 
 --- slides
 layout: items
@@ -56,62 +83,72 @@ cols: 2
 
 ---
 
-<v-clicks>
-
 <div>
 <logos-vue />
 
-Vue 3
+15 million downloads
 
 </div>
 
-<div class="opacity-40">
+<div v-click>
 <logos-nuxt-icon />
 
-Nuxt 3
+2 million downloads
 
 </div>
 
-</v-clicks>
-
-::before::
-
-### Back in August 2021...
-
 --- slides
-layout: v-center
+layout: center
 
 ---
 
-<v-clicks>
+## 14 million
 
-- <twemoji-2nd-place-medal /> Nuxt 2
-- <twemoji-bento-box /> Nuxt 2 modules
-- <twemoji-exploding-head /> Awesome stuff
-- <twemoji-rocket /> Next steps
+<v-click>
 
-</v-clicks>
+Number of <logos-nuxt-icon /> **Nuxt Modules** downloads<br/>over the last 30 days
+
+<footnote>
+
+Source: [modules.nuxtjs.org](https://modules.nuxtjs.org)
+
+</footnote>
+
+</v-click>
+
+--- slides
+layout: items
+cols: 2
+
+---
+
+<div>
+<twemoji-woman-raising-hand />
+
+1 person installed<br />14 million modules
+
+</div>
+
+<div v-click>
+<logos-nuxt-icon />
+
+Nuxt projects use<br />on average 7 modules
+
+</div>
 
 --- slides
 layout: center
 
 ---
 
-<img src="/kidding.gif" alt="Kidding gif" class="h-screen object-contain" />
+## <twemoji-woman-shrugging /> Math ain't sure
 
 --- slides
 layout: center
 
 ---
 
-## We'll talk about<br />Nuxt 3!
-
---- slides
-layout: center
-
----
-
-## We'll talk about<br />Nuxt 3 Modules!
+## Nuxt Modules are a central part of Nuxt 
 
 --- slides
 layout: v-center
@@ -123,7 +160,7 @@ layout: v-center
 <v-clicks>
 
 - <twemoji-thinking-face /> What they're about?
-- <twemoji-technologist /> How you can make some?
+- <twemoji-technologist /> How you can make some and why?
 - <twemoji-handshake /> How to get involved in open-source with Nuxt Modules?
 
 </v-clicks>
@@ -153,7 +190,7 @@ layout: v-center
 
 <v-clicks>
 
-- <twemoji-woman-student /> Just done with Computer Science
+- <vscode-icons-file-type-wikitext /> Started development with MediaWiki
 - <logos-prismic-icon /> Developer Experience Engineer at Prismic
 - <logos-nuxt-icon /> Proud Nuxt contributor & ambassador
 
@@ -746,7 +783,7 @@ clicks: 3
 
   <v-click at="2">
 
-  - <twemoji-alarm-clock /> Nuxt Test Utils still on their way~
+  - <twemoji-alarm-clock /> Nuxt Test Utils are here to help~
 
   </v-click>
 
@@ -929,7 +966,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/amsterdam](https://lucie.red/amsterdam)
+#### -> [lucie.red/toronto](https://lucie.red/toronto)
 
 </div>
 
@@ -958,6 +995,6 @@ layout: cover
 
 <small>
 
-[lucie.red/amsterdam](https://lucie.red/amsterdam) — [lucie.red/twitter](https://lucie.red/twitter)
+[lucie.red/toronto](https://lucie.red/toronto) — [lucie.red/twitter](https://lucie.red/twitter)
 
 </small>
