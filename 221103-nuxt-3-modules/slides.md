@@ -147,7 +147,7 @@ layout: center
 
 ---
 
-## <twemoji-woman-shrugging /> Math ain't sure
+<img src="/maths.gif" alt="Maths gif" class="h-screen object-contain" />
 
 --- slides
 layout: center
