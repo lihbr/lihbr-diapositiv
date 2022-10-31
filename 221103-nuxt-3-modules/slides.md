@@ -694,7 +694,7 @@ cols: 1
 
 <p>
 
-<twemoji-window /> &nbsp;Hooks are windows to Nuxt internals to which you can hook to.
+<twemoji-window /> &nbsp;Hooks are windows to Nuxt internals which you can hook to.
 
 </p>
 
@@ -789,7 +789,7 @@ clicks: 3
 
   <v-click at="2">
 
-  - <twemoji-alarm-clock /> Nuxt Test Utils are here to help~
+  - <twemoji-toolbox /> Nuxt Test Utils are here to help~
 
   </v-click>
 
