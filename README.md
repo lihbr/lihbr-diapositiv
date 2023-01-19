@@ -8,7 +8,7 @@
 
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 
-Assets and sources for my talks and presentations. Find all the resources about them [diapositiv.lihbr.com ✨][diapositiv].
+Assets and sources for my talks and presentations. Find all the resources about them [lihbr.com/#talks ✨][diapositiv]
 
 ## License
 
@@ -18,12 +18,12 @@ All other subdirectories (talk and presentation directories) are licensed under 
 
 <!-- Links -->
 
-[diapositiv]: https://diapositiv.lihbr.com
+[diapositiv]: https://lihbr.com/#talks
 [license]: ./LICENSE
 [cc-license-src]: https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png
 [cc-license-href]: http://creativecommons.org/licenses/by-nc-sa/4.0
 
 <!-- Badges -->
 
-[conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
+[conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
 [conventional-commits-href]: https://conventionalcommits.org
