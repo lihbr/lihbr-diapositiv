@@ -1,0 +1,13 @@
+{
+	"name": "230210-open-source-ecosystem",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"@iconify-json/logos": "1.1.22",
+		"@iconify-json/mdi": "1.1.43",
+		"@iconify-json/twemoji": "1.1.10",
+		"@iconify-json/simple-icons": "1.1.41",
+		"@slidev/cli": "0.38.3",
+		"slidev-theme-diapositiv": "0.1.3"
+	}
+}
