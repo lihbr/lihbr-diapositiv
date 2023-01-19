@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/amsterdam](https://lucie.red/amsterdam)**
+  **-> [lucie.red/amsterdam-22](https://lucie.red/amsterdam-22)**
 
   <br />
 
@@ -929,7 +929,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/amsterdam](https://lucie.red/amsterdam)
+#### -> [lucie.red/amsterdam-22](https://lucie.red/amsterdam-22)
 
 </div>
 
@@ -958,6 +958,6 @@ layout: cover
 
 <small>
 
-[lucie.red/amsterdam](https://lucie.red/amsterdam) — [lucie.red/twitter](https://lucie.red/twitter)
+[lucie.red/amsterdam-22](https://lucie.red/amsterdam-22) — [lucie.red/twitter](https://lucie.red/twitter)
 
 </small>
