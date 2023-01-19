@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://diapositiv.lihbr.com">
+  <a href="https://lihbr.com/#talks">
     <img src="./.github/logo.svg" alt="lihbr-diapositiv" height="128" />
   </a>
 </p>

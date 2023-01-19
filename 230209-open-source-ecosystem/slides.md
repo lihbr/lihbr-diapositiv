@@ -46,6 +46,153 @@ layout: center
 ## Let's start with a little story, shall we?
 
 --- slides
+layout: items
+cols: 5
+
+---
+
+<div class="self-center heading-h2 heading-reset" v-click><logos-nuxt-icon /></div>
+
+<v-click>
+
+<div class="self-center heading-h2 heading-reset">+</div>
+
+<div class="self-center heading-h2 heading-reset"><logos-netlify /></div>
+
+</v-click>
+
+<v-click>
+
+<div class="self-center heading-h2 heading-reset">+</div>
+
+<div>
+<logos-wordpress-icon />
+<logos-prismic-icon />
+<logos-storyblok-icon />
+</div>
+
+</v-click>
+
+--- slides
+layout: center
+
+---
+
+## It worked great!
+
+<small v-click>However...</small>
+
+--- slides
+layout: center
+
+---
+
+![Modern Times Charlie Chaplin GIF](/modernTimes.gif)
+
+--- slides
+layout: center
+
+---
+
+## <twemoji-thinking-face /> &nbsp;Making my own packages?
+
+--- slides
+layout: center
+
+---
+
+![lihbr utils Nuxt preview](/utilsNuxt-light.png)
+![lihbr utils Nuxt preview](/utilsNuxt-dark.png)
+
+--- slides
+layout: center
+
+---
+
+![lihbr utils Netlify preview](/utilsNetlify-light.png)
+![lihbr utils Netlify preview](/utilsNetlify-dark.png)
+
+--- slides
+layout: v-center
+
+---
+
+### That worked great!
+
+<v-clicks>
+
+- <twemoji-cherries /> Cherry-picking my packages on a need basis
+- <twemoji-scissors /> No more copy/pasting the same snippets from project to project!
+
+</v-clicks>
+
+--- slides
+layout: center
+
+---
+
+## Do you know who faced a similar story around the same period?
+
+--- slides
+layout: center
+
+---
+
+![NuxtLabs team](/nuxtlabs.png)
+
+<footnote>
+
+Technically, it's [NuxtLabs](https://nuxtlabs.com) team pictured here~
+
+</footnote>
+
+--- slides
+layout: items
+cols: 3
+
+---
+
+<div class="self-center">
+
+<img src="/nuxtContrib.png" alt="Nuxt Contrib logo" class="w-32 mx-auto mb-6" />
+
+Then
+
+</div>
+
+<v-click>
+
+<div class="self-center heading-h2 heading-reset">-></div>
+
+<div class="self-center">
+
+<img src="/unjs.png" alt="UnJS logo" class="w-32 mx-auto mb-6" />
+Now
+
+</div>
+
+</v-click>
+
+--- slides
+layout: v-center
+
+---
+
+<v-click>
+
+### Let's talk package:
+
+</v-click>
+
+<v-clicks>
+
+- <twemoji-globe-with-meridians /> What's a package ecosystems, and why would you have your own?
+- <logos-npm /> How package work with NPM?
+- <twemoji-wrench /> What package maintenance looks like?
+
+</v-clicks>
+
+--- slides
 layout: center
 
 ---
@@ -145,7 +292,6 @@ Ecosystem of packages
 </div>
 
 </v-click>
-
 
 ::before::
 
@@ -1577,21 +1723,12 @@ class: issueTemplate
 
 ---
 
-<style>
-.slidev-layout.issueTemplate img {
-	margin-top: -6px;
-}
-.dark .slidev-layout.issueTemplate img {
-	margin-top: -8px;
-}
-</style>
-
-![Prismic client GitHub issue template](/issueTemplate-light.png)
-![Prismic client GitHub issue template](/issueTemplate-dark.png)
+<img src="/issueTemplate-light.png" alt="Prismic client GitHub issue template" class="mt-[-6px]" />
+<img src="/issueTemplate-dark.png" alt="Prismic client GitHub issue template" class="mt-[-8px]" />
 
 <footnote>
 
-Shamefully inspired and adapted from Nuxt's old bug report template
+Shamefully inspired and adapted from Nuxt's old bug report template~
 
 </footnote>
 
@@ -1614,53 +1751,149 @@ You can learn a lot this way.
 
 ### Maintaining Packages
 
+--- slides
+layout: v-center
 
+---
 
+Regular maintenance:
 
+<v-clicks>
 
+- <twemoji-bug /> Fixing bugs if any
+- <twemoji-books /> Maintaining dependencies (updating them)
 
+</v-clicks>
 
+<div class="invisible">
 
+- foo
 
+</div>
 
+<p v-click>
 
+<twemoji-red-question-mark /> &nbsp;Helps ensuring your package keeps working and is easy to work with.
 
+</p>
 
+<p v-click>
 
+<logos-prismic-icon /> &nbsp;At Prismic, once a week if there are issues, otherwise, once a month.
 
+</p>
 
+::before::
 
+### Maintaining Packages
 
+--- slices
+layout: center
 
+---
 
+<img src="/botReply-light.png" alt="Prismic client GitHub issue bot reply" class="w-[64%]" />
+<img src="/botReply-dark.png" alt="Prismic client GitHub issue bot reply" class="w-[64%]" />
 
+<footnote>
 
+GitHub auto issue reply message bot, feel free to steal it: [github.com/prismicio/prismic-client](https://github.com/prismicio/prismic-client/blob/master/.github/workflows/issues.yml)
 
+</footnote>
 
+--- slides
+layout: v-center
+clicks: 6
 
+---
 
+Evolving?
 
+<v-clicks>
 
+- <twemoji-party-popper /> Adding new features and changing existing ones
+- <twemoji-hand-with-index-finger-and-thumb-crossed /> No rule of thumb for that
+- <twemoji-small-orange-diamond /> Adding small features can often be done as-is
 
+</v-clicks>
 
+<ul>
 
+<li :class="{ invisible: $slidev.nav.clicks < 4 }">
+<twemoji-large-orange-diamond /> For bigger ones and breaking changes, planning is encouraged
+<ul>
+<li :class="{ invisible: $slidev.nav.clicks < 5 }">
+<logos-prismic-icon /> &nbsp;RFCs work great for us at Prismic
+</li>
+<li :class="{ invisible: $slidev.nav.clicks < 6 }">
 
+<twemoji-page-facing-up /> &nbsp;[Nuxt 3 `<NuxtLink />` RFC example](https://github.com/nuxt/framework/discussions/2086#discussioncomment-1683819)
 
+</li>
+</ul>
+</li>
 
+</ul>
 
+::before::
 
+### Maintaining Packages
 
+--- slides
+layout: v-center
+clicks: 6
 
+---
 
+A package can die.
 
+<v-clicks>
 
+- <twemoji-pager /> Maybe its functionalities are now native, or not relevant anymore
+- <twemoji-sparkles /> Maybe it has been replaced with something better
+- <twemoji-ghost /> Maybe no one wants to maintain it anymore
 
+</v-clicks>
 
+<div class="invisible">
 
+- foo
 
+</div>
 
+<p v-click>
 
+<logos-npm /> &nbsp;Be a great citizen and use the `npm deprecate` command.
 
+</p>
+
+::before::
+
+### Maintaining Packages
+
+--- slides
+layout: cover
+
+---
+
+# Maintaining Your Company’s Open-Source Ecosystem
+
+_...or how to make great npm packages for the mere mortal._
+
+--- slides
+layout: v-center
+
+---
+
+### We discussed:
+
+<v-clicks>
+
+- <twemoji-globe-with-meridians /> Package ecosystems, for organizations and individuals
+- <logos-npm /> NPM packages and their intricacies
+- <twemoji-wrench /> Package maintenance tips
+
+</v-clicks>
 
 --- slides
 layout: v-center
