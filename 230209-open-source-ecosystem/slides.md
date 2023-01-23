@@ -220,7 +220,7 @@ layout: v-center
 - <vscode-icons-file-type-wikitext /> Started development with MediaWiki
 - <twemoji-bank /> I worked at a bank™
 - <logos-prismic-icon /> Developer Experience Engineer at Prismic
-- <logos-nuxt-icon /> Proud Nuxt contributor & ambassador
+- <logos-nuxt-icon /> Proud Nuxt contributor & team member
 
 </v-clicks>
 
