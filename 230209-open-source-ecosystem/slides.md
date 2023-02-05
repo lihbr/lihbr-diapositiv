@@ -1097,23 +1097,23 @@ Mandatory `version` field.
 --- slides
 layout: poll
 id: semver
-choices: ["valid", "invalid"]
+choices: ["yes", "no"]
 
 ---
 
 <qr-code content="https://lucie.red/true">
-Valid
+Yes
 </qr-code>
 
 <qr-code content="https://lucie.red/false">
-Invalid
+No
 </qr-code>
 
 ::before::
 
 <h3 class="text-center">
 
-Is `2.3` a valid version number?
+Can you use `2.3` as a version number?
 
 </h3>
 
@@ -1372,9 +1372,6 @@ layout: v-center
 		}
 	},
 	"types": "dist/index.d.ts",
-	"bin": {
-		"my-package": "bin/cli.js"
-	},
 	"scripts": { ... },
 	"dependencies": { ... },
 	"devDependencies": { ... }
