@@ -741,8 +741,8 @@ Small packages also make a difference.
 <v-clicks>
 
 - <twemoji-woman-artist /> Easier to start with as an author
-- <twemoji-office-building /> More realistic for most companies
-- <twemoji-microscope /> Smaller surface and scope than a big codebase
+- <twemoji-office-building /> More easily made at any company
+- <twemoji-microscope /> Smaller surface and scope than big codebases
 - <logos-vitest /> Small APIs can easily be battle-tested
 - <twemoji-bank /> Give us confidence to build on trusty foundations
 
@@ -1838,7 +1838,6 @@ Evolving?
 
 --- slides
 layout: v-center
-clicks: 6
 
 ---
 
