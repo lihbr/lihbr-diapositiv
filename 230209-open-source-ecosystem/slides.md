@@ -395,7 +395,7 @@ layout: center
 
 ---
 
-## That's my definition of a package ecysostem
+## That's my definition of a package ecosystem
 
 <small v-click>But let's precise a few things...</small>
 
