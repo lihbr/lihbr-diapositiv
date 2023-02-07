@@ -880,7 +880,7 @@ layout: v-center
 
 ---
 
-npm is also an only database.
+npm is also an online database.
 
 <v-clicks>
 
@@ -937,7 +937,7 @@ layout: v-center
 ---
 
 - <twemoji-laptop /> A CLI
-- <twemoji-computer-disk /> An only database (registry)
+- <twemoji-computer-disk /> An online database (registry)
 
 <br />
 
