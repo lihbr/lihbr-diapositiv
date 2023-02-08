@@ -672,7 +672,7 @@ layout: v-center
 
 ---
 
-Packages are qui handy to abstract code you use often:
+Packages are quite handy to abstract code you use often:
 
 <v-clicks>
 
