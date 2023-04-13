@@ -180,14 +180,14 @@ layout: v-center
 
 <v-click>
 
-### Let's talk package:
+### Let's talk packages:
 
 </v-click>
 
 <v-clicks>
 
-- <twemoji-globe-with-meridians /> What's a package ecosystems, and why would you have your own?
-- <logos-npm /> How package work with NPM?
+- <twemoji-globe-with-meridians /> What's a package ecosystem, and why would you have your own?
+- <logos-npm /> How packages work with NPM?
 - <twemoji-wrench /> What package maintenance looks like?
 
 </v-clicks>
@@ -397,7 +397,7 @@ layout: center
 
 ## That's my definition of a package ecosystem
 
-<small v-click>But let's precise a few things...</small>
+<small v-click>But let's specify a few things...</small>
 
 --- slides
 layout: v-center
