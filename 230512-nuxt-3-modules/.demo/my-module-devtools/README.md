@@ -14,10 +14,9 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+My new Nuxt module integrated with the [Nuxt Devtools](https://github.com/nuxt/devtools).
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
@@ -63,11 +62,11 @@ npm install
 # Generate type stubs
 npm run dev:prepare
 
-# Develop with the playground
+# Develop with playground, with devtools client ui
 npm run dev
 
-# Build the playground
-npm run dev:build
+# Develop with playground, with bundled client ui
+npm run play:prod
 
 # Run ESLint
 npm run lint

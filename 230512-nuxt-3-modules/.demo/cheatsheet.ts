@@ -1,13 +1,19 @@
 // Imports
-import { defineNuxtModule, createResolver, addPlugin } from '@nuxt/kit'
+import { addCustomTab } from '@nuxt/devtools-kit'
+import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
 // Setup
 const setup = (options, nuxt) => {
-	if (new Date().getHours() === 11) {
-		console.warn("It's apero time you fool! What are you starting?!")
-	}
-
-	nuxt.options.ssr = false
+	addCustomTab({
+		name: 'my-module',
+		title: 'My Module',
+		icon: 'carbon:edt-loop',
+		view: {
+			type: 'iframe',
+			src: 'http://localhost:3000'
+			// src: 'https://www.nytimes.com/games/wordle/index.html'
+		}
+	})
 
 	const { resolve } = createResolver(import.meta.url)
 

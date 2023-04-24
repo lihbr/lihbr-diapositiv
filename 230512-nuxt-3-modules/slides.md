@@ -213,6 +213,25 @@ layout: v-center
 ### About Me
 
 --- slides
+layout: poll
+id: mod
+choices: ["yes", "no"]
+
+---
+
+<qr-code content="https://lucie.red/mod">
+Yes
+</qr-code>
+
+<qr-code content="https://lucie.red/nomod">
+No
+</qr-code>
+
+::before::
+
+<h3 class="text-center">Have you ever written a Nuxt module?</h3>
+
+--- slides
 layout: cover
 
 ---
@@ -551,24 +570,7 @@ layout: cover
 
 ## Let’s Learn How to Create Nuxt 3 Modules!
 
---- slides
-layout: v-center
-
----
-
-What's new:
-
-<v-clicks>
-
-- <twemoji-japanese-service-charge-button /> First-class TypeScript support
-- <twemoji-classical-building /> Stronger structure
-- <twemoji-triangular-ruler /> Nicer developer experience and defaults
-
-</v-clicks>
-
-::before::
-
-### Let’s Learn How to Create Nuxt 3 Modules
+<small v-click>Concretely~</small>
 
 --- slides
 layout: center
@@ -619,6 +621,25 @@ layout: v-center
 </v-clicks>
 
 --- slides
+layout: poll
+id: demo
+choices: ["assets", "devtools"]
+
+---
+
+<qr-code content="https://lucie.red/asset">
+Providing stylesheet, helpers, etc.
+</qr-code>
+
+<qr-code content="https://lucie.red/devt">
+Integrating with Nuxt DevTools 
+</qr-code>
+
+::before::
+
+<h3 class="text-center">What do you want our module to do?</h3>
+
+--- slides
 layout: center
 
 ---
@@ -630,7 +651,7 @@ layout: center
 
 ---
 
-### That was 3 things you can do with modules
+### That was an example of what module can do
 
 --- slides
 layout: v-center
@@ -642,6 +663,8 @@ layout: v-center
 <v-clicks>
 
 - <twemoji-bento-box /> Adding auto-imports for components
+- <twemoji-alembic /> Interacting with Nitro, Nuxt server engine
+- <twemoji-hook /> Listening to Nuxt lifecycles with hooks
 - <twemoji-abacus /> And many more...
 
 </v-clicks>
@@ -651,127 +674,13 @@ layout: center
 
 ---
 
-## <twemoji-index-pointing-up /> What about hooks?
+## No FOMO!
 
---- slides
-layout: items
-cols: 1
+<small>
 
----
+Many recipes are documented: [nuxt.com/docs/guide/going-further/modules](https://nuxt.com/docs/guide/going-further/modules#recipes)
 
-<p>
-
-<twemoji-window /> &nbsp;Hooks are windows to Nuxt internals which you can hook to.
-
-</p>
-
-<v-click>
-
--^
-
-<p>
-
-<twemoji-person-running /> &nbsp;They allow you to get information about, and alter Nuxt behaviors.
-
-</p>
-
-<v-click>
-
-<p>
-
-<twemoji-rocket /> &nbsp;They are a bit advanced, but really what make Nuxt modules capable of anything.
-
-</p>
-
-</v-click>
-
-</v-click>
-
-::before::
-
-### What about hooks?
-
---- slides
-layout: v-center
-
----
-
-<!-- prettier-ignore-start -->
-```typescript {6-10,14-16|14-16|6-10|all}
-import { defineNuxtModule } from "@nuxt/kit";
-
-export default defineNuxtModule({
-	meta: { /* ... */ },
-	defaults: { /* ... */ },
-	hooks: {
-		"pages:extend": (pages) => {
-			console.info(`Discovered ${pages.length} pages`);
-		},
-	},
-	setup(options, nuxt) {
-		/* ... */
-
-		nuxt.hook("pages:extend", (pages) => {
-			console.info(`Discovered ${pages.length} pages`);
-		});
-	},
-});
-```
-<!-- prettier-ignore-end -->
-
---- slides
-layout: v-center
-
----
-
-### About writing modules:
-
-<v-clicks>
-
-- <twemoji-ferris-wheel /> Any code can run in the module `setup` function
-- <twemoji-toolbox /> `@nuxt/kit` provides a lot of utilities for common tasks
-- <twemoji-sunrise-over-mountains /> The `runtime` directory holds assets made available by the module
-- <twemoji-hook /> Hooks are windows to Nuxt internals, that can react to, and alter them
-
-</v-clicks>
-
---- slides
-layout: center
-
----
-
-## So we know how to module, what now?
-
---- slides
-layout: v-center
-clicks: 3
-
----
-
-- <twemoji-newspaper /> Share our module on npm: pick a version + `npm publish`
-
-<ul>
-
-<li :class="{ invisible: $slidev.nav.clicks < 1 }">
-<twemoji-alembic /> Let's test it at some point!
-<ul>
-<li :class="{ invisible: $slidev.nav.clicks < 2 }">
-	<twemoji-toolbox /> Nuxt Test Utils are here to help~
-</li>
-</ul>
-</li>
-
-<li :class="{ invisible: $slidev.nav.clicks < 3 }">
-
-<twemoji-abacus /> Streamline publishing process [Standard Version CLI](https://github.com/conventional-changelog/standard-version)
-
-</li>
-
-</ul>
-
-::before::
-
-### So we know how to module, what now?
+</small>
 
 --- slides
 layout: center
@@ -781,7 +690,6 @@ clicks: 1
 
 <h2 v-if="$slidev.nav.clicks < 1">That's...</h2>
 <h2 v-if="$slidev.nav.clicks >= 1">That’s not all folks</h2>
-<small v-click="1">I lied...</small>
 
 --- slides
 layout: cover

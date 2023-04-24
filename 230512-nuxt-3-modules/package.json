@@ -7,6 +7,6 @@
 		"@iconify-json/mdi": "1.1.50",
 		"@iconify-json/twemoji": "1.1.11",
 		"@slidev/cli": "0.40.14",
-		"slidev-theme-diapositiv": "0.1.4"
+		"slidev-theme-diapositiv": "0.1.6"
 	}
 }
