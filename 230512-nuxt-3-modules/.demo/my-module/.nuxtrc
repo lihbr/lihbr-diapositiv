@@ -1,2 +1,2 @@
-imports.autoImport=false
+imports.autoImport=true # this is set to true for the convenience of the demo, but should be kept to `false`
 typescript.includeWorkspace=true

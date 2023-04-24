@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addImportsDir } from '@nuxt/kit'
 
 export interface ModuleOptions {}
 
@@ -12,5 +12,7 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
 
     addPlugin(resolver.resolve('./runtime/plugin'))
+
+    addImportsDir(resolver.resolve('./runtime/imports'))
   }
 })

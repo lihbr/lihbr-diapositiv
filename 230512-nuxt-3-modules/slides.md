@@ -648,10 +648,41 @@ layout: center
 
 --- slides
 layout: center
+class: nuxiInit
 
 ---
 
-### That was an example of what module can do
+<style>
+.slidev-layout.nuxiInit code {
+	font-size: 1.625rem;
+	padding-left: .25rem;
+	padding-right: .25rem;
+}
+</style>
+
+### Nuxt module with devtools integration starter:
+
+<br />
+
+`npx nuxi@latest init -t module-devtools my-module-devtools`
+
+<br />
+
+<small>Then, we'll again install dependencies...</small>
+
+--- slides
+layout: center
+
+---
+
+## &lt;live-coding /&gt;
+
+--- slides
+layout: center
+
+---
+
+### That was an example of what modules can do
 
 --- slides
 layout: v-center
