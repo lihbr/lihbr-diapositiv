@@ -4,11 +4,11 @@ import { defineNuxtModule, addPlugin, createResolver, addImportsDir } from '@nux
 
 // Setup
 const setup = (options, nuxt) => {
-	const { resolve } = createResolver(import.meta.url)
+	const resolver = createResolver(import.meta.url)
 
-	nuxt.options.css.push(resolve('./runtime/style.css'))
+	nuxt.options.css.push(resolver.resolve('./runtime/style.css'))
 
-	const plugin = resolve('./runtime/plugin.ts')
+	const plugin = resolver.resolve('./runtime/plugin.ts')
 	nuxt.options.build.transpile.push(plugin)
 	addPlugin(plugin)
 
