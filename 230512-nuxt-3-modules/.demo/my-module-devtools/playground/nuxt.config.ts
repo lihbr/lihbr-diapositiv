@@ -3,6 +3,9 @@ import { startSubprocess } from '@nuxt/devtools-kit'
 import { resolve } from 'path'
 
 export default defineNuxtConfig({
+  devServer: {
+    port: 4000
+  },
   modules: [
     '@nuxt/devtools',
     /**
