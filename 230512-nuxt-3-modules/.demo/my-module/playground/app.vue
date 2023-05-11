@@ -10,5 +10,5 @@ import { useNuxtApp } from '#app'
 const nuxt = useNuxtApp()
 nuxt.$myModule && console.log(nuxt.$myModule)
 
-// console.log(ping(), lorem(), predictBitcoingValue())
+// console.log(ping(), lorem(), predictBitcoinValue())
 </script>
