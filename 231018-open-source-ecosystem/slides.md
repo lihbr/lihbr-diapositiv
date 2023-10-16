@@ -516,7 +516,7 @@ layout: center
 
 ---
 
-<img src="/nuxtnation2021.jpg" alt="Nuxt Nation 2021" class="h-screen !max-w-full object-contain" />
+<img src="/nuxtnation2021.jpg" alt="Nuxt Nation 2021" class="h-screen !max-w-full object-contain mb-10" />
 
 <footnote>
 
@@ -760,6 +760,25 @@ layout: center
 ## It's fine if you don't want or need to create packages yet.
 
 <small v-click>But it's always cool to know how to.</small>
+
+--- slides
+layout: poll
+id: pkg
+choices: ["yes", "no"]
+
+---
+
+<qr-code content="https://lucie.red/pkg">
+Yes
+</qr-code>
+
+<qr-code content="https://lucie.red/nopkg">
+No
+</qr-code>
+
+::before::
+
+<h3 class="text-center">Have you ever published a package?</h3>
 
 --- slides
 layout: cover
@@ -1157,6 +1176,29 @@ Mandatory `version` field.
 ::before::
 
 ### package.json
+
+--- slides
+layout: poll
+id: semver
+choices: ["yes", "no"]
+
+---
+
+<qr-code content="https://lucie.red/true">
+Yes
+</qr-code>
+
+<qr-code content="https://lucie.red/false">
+No
+</qr-code>
+
+::before::
+
+<h3 class="text-center">
+
+Can you use `2.3` as a version number?
+
+</h3>
 
 --- slides
 layout: center
@@ -1726,6 +1768,29 @@ class: prWelcome
 If the package works fine enough for you and others, it's already great!
 
 </v-click>
+
+--- slides
+layout: poll
+id: issue
+choices: ["yes", "no"]
+
+---
+
+<qr-code content="https://lucie.red/open">
+Yes
+</qr-code>
+
+<qr-code content="https://lucie.red/never">
+No
+</qr-code>
+
+::before::
+
+<h3 class="text-center -mt-[0.5em]">
+
+Have you ever opened an issue or a feature request on an open-source project?
+
+</h3>
 
 --- slides
 layout: center
