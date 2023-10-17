@@ -1508,7 +1508,7 @@ layout: v-center
 
 <v-click>
 
-```json{4-17}
+```json{4-17|14-17}
 {
 	"name": "@prismicio/client",
 	"version": "7.0.0",
