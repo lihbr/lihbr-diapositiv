@@ -1506,7 +1506,10 @@ layout: v-center
 
 ---
 
-<v-click>
+--- slides
+layout: v-center
+
+---
 
 ```json{4-17|14-17}
 {
@@ -1537,8 +1540,6 @@ layout: v-center
 Abstract from [`@prismicio/client` package definition](https://github.com/prismicio/prismic-client/blob/master/package.json)
 
 </footnote>
-
-</v-click>
 
 --- slides
 layout: v-center
