@@ -1794,49 +1794,6 @@ Have you ever opened an issue or a feature request on an open-source project?
 </h3>
 
 --- slides
-layout: center
-
----
-
-## Inspire from other open-source projects
-
-<small v-click>Things that work great for others, might work great for you!</small>
-
---- slices
-layout: center
-class: issueTemplate
-
----
-
-<img src="/issueTemplate-light.png" alt="Prismic client GitHub issue template" class="mt-[-6px]" />
-<img src="/issueTemplate-dark.png" alt="Prismic client GitHub issue template" class="mt-[-8px]" />
-
-<footnote>
-
-Shamefully inspired and adapted from Nuxt's old bug report template~
-
-</footnote>
-
---- slides
-layout: v-center
-
----
-
-You can learn a lot this way.
-
-<v-clicks>
-
-- <twemoji-file-folder /> Do crazy things through the `.github` folder
-- <twemoji-abacus /> Automate your release process with tools like [Standard Version CLI](https://github.com/conventional-changelog/standard-version)
-- <twemoji-magnifying-glass-tilted-right /> Update dependencies with tools like [VSCode Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
-
-</v-clicks>
-
-::before::
-
-### Maintaining Packages
-
---- slides
 layout: v-center
 
 ---
