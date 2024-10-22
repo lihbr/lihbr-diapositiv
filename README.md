@@ -12,12 +12,13 @@ Assets and sources for my talks and presentations. Find all the resources about 
 
 ## License
 
-`.github`, `.husky` and all root files are licensed under an [MIT License][license].
+`.github` and all root files are licensed under [MIT][license] License © 2021-PRESENT [Lucie Haberer][lihbr-github]
 
-All other subdirectories (talk and presentation directories) are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)][cc-license-href].
+All other subdirectories (talk and presentation directories) are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)][cc-license-href].
 
 <!-- Links -->
-
+[license]: ./LICENSE
+[lihbr-github]: https://github.com/lihbr
 [diapositiv]: https://lihbr.com/#talks
 [license]: ./LICENSE
 [cc-license-src]: https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png
@@ -25,5 +26,5 @@ All other subdirectories (talk and presentation directories) are licensed under 
 
 <!-- Badges -->
 
-[conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+[conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?style=flat&colorA=131010&colorB=f27602&logo=conventionalcommits&logoColor=faf1f1
 [conventional-commits-href]: https://conventionalcommits.org

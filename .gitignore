@@ -1,4 +1,3 @@
-# custom
 dist
 slides-export
 components.d.ts
@@ -21,11 +20,11 @@ yarn.lock
 
 # npm
 npm-debug.log*
+package-lock.json
 
 # tests
 coverage
 .eslintcache
-.nyc_output
 
 # .env
 .env
@@ -37,6 +36,3 @@ coverage
 !.vscode/tasks.json
 !.vscode/launch.json
 *.code-workspace
-
-# custom
-!*/.demo/*.code-workspace
