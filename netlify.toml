@@ -1,25 +1,18 @@
 # Global context
 [build]
 	# Base directory
-	base = ""
+	base = "$DIRECTORY"
 	# Build command
-	command = "cd $DIRECTORY && npx slidev build && mv dist ../dist"
+	command = "npx slidev build"
 	# Build directory
 	publish = "dist/"
-	ignore  = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECTORY}/\""
 
 # Enforce Node version
 [build.environment]
-	NODE_VERSION = "16.15.0"
+	NODE_VERSION = "22"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 	force = false
-
-# [[redirects]]
-# 	from = "https://SITE_URL.lucie.red/*"
-# 	to = "https://example.com/:splat"
-# 	status = 301
-# 	force = true
