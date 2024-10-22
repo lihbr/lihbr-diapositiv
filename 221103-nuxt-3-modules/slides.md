@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/toronto](https://lucie.red/toronto)**
+  **-> [lucie.red/toronto-22](https://lucie.red/toronto-22)**
 
   <br />
 
@@ -972,7 +972,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/toronto](https://lucie.red/toronto)
+#### -> [lucie.red/toronto-22](https://lucie.red/toronto-22)
 
 </div>
 
@@ -1001,6 +1001,6 @@ layout: cover
 
 <small>
 
-[lucie.red/toronto](https://lucie.red/toronto) — [lucie.red/twitter](https://lucie.red/twitter)
+[lucie.red/toronto-22](https://lucie.red/toronto-22) — [lucie.red/twitter](https://lucie.red/twitter)
 
 </small>

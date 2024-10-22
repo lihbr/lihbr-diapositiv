@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)**
+  **-> [lucie.red/nuxtnation-23](https://lucie.red/nuxtnation-23)**
 
   <br />
 
@@ -1949,7 +1949,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)
+#### -> [lucie.red/nuxtnation-23](https://lucie.red/nuxtnation-23)
 
 </div>
 
@@ -1990,6 +1990,6 @@ layout: cover
 
 <small>
 
-[lucie.red/nuxtnation](https://lucie.red/nuxtnation) — [lucie.red/twitter](https://lucie.red/twitter) — [lucie.red/mastodon](https://lucie.red/mastodon)
+[lucie.red/nuxtnation-23](https://lucie.red/nuxtnation-23) — [lucie.red/twitter](https://lucie.red/twitter) — [lucie.red/mastodon](https://lucie.red/mastodon)
 
 </small>

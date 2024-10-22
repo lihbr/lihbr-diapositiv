@@ -1,18 +1,14 @@
-# Global context
 [build]
-	# Base directory
-	base = "$DIRECTORY"
-	# Build command
-	command = "npx slidev build"
-	# Build directory
-	publish = "dist/"
+base = ""
+command = "cd $DIRECTORY && npx slidev build && mv dist ../dist"
+publish = "dist/"
+ignore = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECTORY}/\""
 
-# Enforce Node version
 [build.environment]
-	NODE_VERSION = "22"
+NODE_VERSION = "22"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-	force = false
+from = "/*"
+to = "/index.html"
+status = 200
+force = false

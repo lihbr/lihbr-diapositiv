@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/london](https://lucie.red/london)**
+  **-> [lucie.red/london-23](https://lucie.red/london-23)**
 
   <br />
 
@@ -879,7 +879,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/london](https://lucie.red/london)
+#### -> [lucie.red/london-23](https://lucie.red/london-23)
 
 </div>
 
@@ -920,6 +920,6 @@ layout: cover
 
 <small>
 
-[lucie.red/london](https://lucie.red/london) — [lucie.red/twitter](https://lucie.red/twitter) — [lucie.red/mastodon](https://lucie.red/mastodon)
+[lucie.red/london-23](https://lucie.red/london-23) — [lucie.red/twitter](https://lucie.red/twitter) — [lucie.red/mastodon](https://lucie.red/mastodon)
 
 </small>

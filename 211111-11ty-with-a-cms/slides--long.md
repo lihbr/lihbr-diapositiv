@@ -13,7 +13,7 @@ info: |
 
   Everything from this talk & more:
 
-  **-> [lucie.red/11ties](https://lucie.red/11ties)**
+  **-> [lucie.red/11ties-21](https://lucie.red/11ties-21)**
 
   <br />
 
@@ -704,7 +704,7 @@ layout: v-center
 
 </p>
 
-#### -> [lucie.red/11ties](https://lucie.red/11ties)
+#### -> [lucie.red/11ties-21](https://lucie.red/11ties-21)
 
 </div>
 
@@ -745,6 +745,6 @@ layout: cover
 
 <small>
 
-[lucie.red/11ties](https://lucie.red/11ties) — [lucie.red](https://lucie.red) — [lucie.red/twitter](https://lucie.red/twitter)
+[lucie.red/11ties-21](https://lucie.red/11ties-21) — [lucie.red](https://lucie.red) — [lucie.red/twitter](https://lucie.red/twitter)
 
 </small>
