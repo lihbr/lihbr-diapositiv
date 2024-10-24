@@ -18,11 +18,10 @@ All other subdirectories (talk and presentation directories) are licensed under 
 
 <!-- Links -->
 [license]: ./LICENSE
-[lihbr-github]: https://github.com/lihbr
-[diapositiv]: https://lihbr.com/#talks
-[license]: ./LICENSE
 [cc-license-src]: https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png
 [cc-license-href]: http://creativecommons.org/licenses/by-nc-sa/4.0
+[lihbr-github]: https://github.com/lihbr
+[diapositiv]: https://lihbr.com/#talks
 
 <!-- Badges -->
 
