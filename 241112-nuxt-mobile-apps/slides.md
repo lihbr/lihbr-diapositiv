@@ -488,7 +488,7 @@ layout: interaction
 ---
 
 <ul>
-	<li><twemoji-bento-box/> Components can be shared between ou apps</li>
+	<li><twemoji-bento-box/> Code can be shared between ou apps</li>
 	<v-clicks depth="2">
 		<li><twemoji-woman-technologist/> Same developer experience
 			<ul>
@@ -505,7 +505,9 @@ layout: interaction
 
 ---
 
-## Get started with:
+## get started with Capacitor:
+
+<div class="code--large">
 
 ```bash {all|1-2|4-7}{lines:false}
 npm install @capacitor/cli @capacitor/core
@@ -515,6 +517,8 @@ npm install @capacitor/ios @capacitor/android
 npx cap add ios
 npx cap add android
 ```
+
+</div>
 
 ---
 
@@ -542,6 +546,7 @@ layout: interaction
 
 ---
 layout: interaction
+align: left
 ---
 
 <CapacitorBridge />
@@ -604,6 +609,12 @@ layout: interaction
 ---
 
 ![Dialog](/capacitor-dialog.jpg)
+
+---
+centered: true
+---
+
+![Dialog](/dialog.png)
 
 ---
 
@@ -673,31 +684,12 @@ centered: true
 nofig: true
 ---
 
-![Camera GitHub](/capacitor-camera-github.jpg)
-
----
-full: true
-centered: true
-nofig: true
----
-
-![Camera GitHub](/capacitor-camera-github-pkg.jpg)
-
----
-full: true
-centered: true
-nofig: true
----
-
-![Camera GitHub](/capacitor-camera-github-native.jpg)
-
----
-full: true
-centered: true
-nofig: true
----
-
-![Camera GitHub](/capacitor-camera-github-src.jpg)
+<v-switch>
+	<template #0><img src="/capacitor-camera-github.jpg" alt="Camera GitHub" /></template>
+	<template #1><img src="/capacitor-camera-github-pkg.jpg" alt="Camera GitHub" /></template>
+	<template #2><img src="/capacitor-camera-github-native.jpg" alt="Camera GitHub" /></template>
+	<template #3><img src="/capacitor-camera-github-src.jpg" alt="Camera GitHub" /></template>
+</v-switch>
 
 ---
 
@@ -707,10 +699,10 @@ nofig: true
 /* ... */
 
 export type CameraPreviewPlugin = {
-	start: (options: CameraPreviewOptions) => Promise<{}>
-	startRecordVideo: (options: CameraPreviewOptions) => Promise<{}>
-	stop: () => Promise<{}>
-	stopRecordVideo: () => Promise<{}>
+	start: (options: CameraPreviewOptions) => Promise<void>
+	startRecordVideo: (options: CameraPreviewOptions) => Promise<void>
+	stop: () => Promise<void>
+	stopRecordVideo: () => Promise<void>
 	capture: (
 		options: CameraPreviewPictureOptions
 	) => Promise<{ value: string }>
@@ -722,7 +714,7 @@ export type CameraPreviewPlugin = {
 		flashMode: CameraPreviewFlashMode | string
 	}) => Promise<void>
 	flip: () => Promise<void>
-	setOpacity: (options: CameraOpacityOptions) => Promise<{}>
+	setOpacity: (options: CameraOpacityOptions) => Promise<void>
 }
 ```
 
@@ -950,3 +942,451 @@ right:
 ---
 
 ## do you build or use in-house packages (NPM packages, or anything) in your company?
+
+---
+layout: interaction
+---
+
+# how do you build a<br>Capacitor plugin?
+
+<v-clicks>
+
+I'll focus on what's important to know.
+
+</v-clicks>
+
+---
+
+## get started with Capacitor plugins:
+
+<div class="code--large">
+
+```bash {all}{lines:false}
+npm init @capacitor/plugin
+```
+
+</div>
+
+---
+full: true
+centered: true
+nofig: true
+---
+
+<v-switch>
+	<template #0><img src="/capacitor-camera2-github.jpg" alt="Camera GitHub" /></template>
+	<template #1><img src="/capacitor-camera2-github-pkg.jpg" alt="Camera GitHub" /></template>
+	<template #2><img src="/capacitor-camera2-github-src.jpg" alt="Camera GitHub" /></template>
+	<template #3><img src="/capacitor-camera2-github-native.jpg" alt="Camera GitHub" /></template>
+	<template #4><img src="/capacitor-camera2-github.jpg" alt="Camera GitHub" /></template>
+</v-switch>
+
+---
+layout: poll
+id: pkg
+left:
+  id: "yes"
+  href: "https://lucie.red/pkg"
+  label: "yes"
+right:
+  id: "no"
+  href: "https://lucie.red/nopkg"
+  label: "no"
+---
+
+## do you build or use in-house packages (NPM packages, or anything) in your company?
+
+---
+
+## `@lihbr/capacitor-camera2`
+
+<v-clicks depth="2">
+
+- Powered by `android.hardware.camera2`
+- Only for Android
+  - <twemoji-red-apple/> No iPhone to test with
+- Written in <vscode-icons-file-type-java/> Java
+  - <vscode-icons-file-type-kotlin/> Kotlin tends to be more common though
+- Broader API for controlling the phone camera
+
+</v-clicks>
+
+---
+
+## On Capacitor plugins:
+
+<v-clicks depth="2">
+
+- <twemoji-alembic/> You have to write native code
+  - <twemoji-clamp/> Greatly reduced in scope
+- Not everyone in the team has to be familiar with plugin development & native code
+  - Most of your effort will remain on building<br>the Nuxt app itself
+
+</v-clicks>
+
+---
+
+`capacitor-camera2/src/definitions.ts`
+
+```typescript {all|16-26|14,31-32|28-29|all}{lines:true,startLine:9}
+/* ... */
+
+export type Camera2Plugin = {
+	start: (options: StartOptions) => Promise<void>
+	stop: () => Promise<void>
+	capture: (options: CaptureOptions) => Promise<void>
+
+	getShutterSpeedRange: () => Promise<ShutterSpeedRange>
+	setShutterSpeed: (options: { value: number }) => Promise<void>
+
+	getApertureRange: () => Promise<ApertureRange>
+	setAperture: (options: { value: number }) => Promise<void>
+
+	getIsoRange: () => Promise<IsoRange>
+	setIso: (options: { value: number }) => Promise<void>
+
+	getExposureCompensationInfo: () => Promise<ExposureCompensationInfo>
+	setExposureCompensation: (options: { value: number }) => Promise<void>
+
+	openPIP: (options: OpenPIPOptions) => Promise<void>
+	closePIP: () => Promise<void>
+
+	pictureToThumbnail: (options: Options) => Promise<{ thumbnail: string }>
+	getExifData: (options: { path: string }) => Promise<ExifData>
+}
+```
+
+---
+
+`lihbr-kamera/app/composables/KameraBody.vue`
+
+```vue {4}
+<script lang="ts" setup>
+import { onLongPress, useWindowSize } from "@vueuse/core"
+
+const { running, start, stop, capture, maxWidth, height } = useCamera2()
+
+const { height: wHeight } = useWindowSize()
+
+function toggle() {
+	running.value ? stop() : start()
+}
+
+const $shutter = ref<HTMLButtonElement>()
+onLongPress($shutter, () => toggle())
+</script>
+
+<template>
+	<section class="flex relative overflow-hidden">
+		<!-- ... -->
+	</section>
+</template>
+```
+
+---
+
+<video src="/kamera-viewfinder.mp4" muted autoplay loop>could not play video</video>
+
+First version completed.
+
+---
+nofig: true
+---
+
+<blockquote>
+
+"This is amazing. It's impressive how you put this together and how smooth it works!"
+
+</blockquote>
+<small><hr>Mireia, VWFNDR team</small>
+
+<blockquote class="text-right !mt-32">
+
+"So impressive and satisfying to see my designs fully fleshed in a smooth OLED touch screen that I can touch!"
+
+</blockquote>
+<small><hr>Alvaro, VWFNDR team</small>
+
+---
+layout: interaction
+---
+
+<v-clicks>
+
+# we won't be all making camera app here
+
+My story is just an example.
+
+</v-clicks>
+
+---
+
+## <vscode-icons-file-type-nuxt /> Nuxt + <vscode-icons-file-type-capacitor /> Capacitor
+
+<v-clicks>
+
+- <twemoji-closed-mailbox-with-raised-flag/> Mail apps
+- <twemoji-pager/> Service apps
+- <twemoji-shopping-cart/> E-commerce apps
+- etc.
+
+</v-clicks>
+
+---
+
+<ul>
+	<li><twemoji-cross-mark/> Material design on iOS</li>
+	<li v-click><twemoji-cross-mark/> iOS design on Android</li>
+</ul>
+
+---
+
+![Dialog](/capacitor-dialog.jpg)
+
+---
+centered: true
+---
+
+![Dialog](/dialog.png)
+
+---
+layout: interaction
+---
+
+# what if we want our whole UI, or part of it, to have a native look and feel?
+
+---
+layout: title
+centered: true
+---
+
+# capacitor got you<br>covered with ionic
+
+---
+full: true
+nofig: true
+---
+
+![Ionic documentation](/ionic-documentation.jpg)
+
+---
+layout: interaction
+---
+
+# each component from Ionic will render differently based on the platform it's running on
+
+---
+
+<div class="flex justify-between">
+
+![Ionic iOS](/ionic-ios.jpg)
+
+<img v-click src="/ionic-android.jpg" alt="Ionic Android" />
+
+</div>
+
+---
+
+## <vscode-icons-file-type-ionic/> Ionic components:
+
+<ul>
+	<li>Render differently based on the platform</li>
+	<v-clicks depth="2">
+		<li>
+			Can be customized through a theming API
+			<ul>
+				<li><twemoji-artist-palette/> Let's you use your own brand colors</li>
+			</ul>
+		</li>
+	</v-clicks>
+</ul>
+
+---
+layout: interaction
+---
+
+# you think you'll want to use Ionic in your project?
+
+---
+
+![We have a Nuxt modules for that](/a-module-for-that.jpg)
+
+---
+
+## [@nuxtjs/ionic](https://ionic.nuxtjs.org)
+
+<v-clicks>
+
+<ul>
+<li>Maintained by Daniel Roe</li>
+<li class="code--large">
+
+Get started with:
+
+```bash {all}{lines:false}
+npx nuxi@latest module add ionic
+```
+
+</li>
+<li>
+
+Learn more at [ionic.nuxtjs.org](https://ionic.nuxtjs.org)
+
+</li>
+</ul>
+
+</v-clicks>
+
+---
+layout: title
+centered: true
+---
+
+<h1><v-click>capacitor</v-click><v-click>, capacitor plugins</v-click><v-click>, and ionic</v-click></h1>
+
+---
+
+## <vscode-icons-file-type-capacitor /> Capacitor
+
+<v-clicks>
+
+A native runtime for building web native apps for Android, iOS, and more.
+
+</v-clicks>
+
+---
+layout: interaction
+align: left
+---
+
+<CapacitorStatic />
+
+<v-click>This is less performant than native code</v-click><v-click>,<br>but the impact is minimal.</v-click>
+
+<v-clicks>
+
+On the other hand:
+
+</v-clicks>
+
+<v-clicks>
+
+- <twemoji-light-bulb /> We benefit from what we know about web development to build our app
+- <twemoji-bento-box /> Code can be shared between apps
+- <twemoji-woman-technologist /> Developer experience will be similar
+
+</v-clicks>
+
+<br>
+
+---
+layout: interaction
+align: left
+---
+
+<CapacitorStatic />
+
+<p class="!mt-0">Capacitor apps are connected to the native<br>runtime of our phones through a bridge.</p>
+
+<v-clicks>
+
+We use Capacitor plugins to discuss through it:
+
+</v-clicks>
+
+<v-clicks depth="2">
+
+- Comparable to <vscode-icons-file-type-nuxt /> Nuxt modules
+- <twemoji-1st-place-medal/> Capacitor makes many first-party plugins
+  - <twemoji-3rd-place-medal/> The community also makes many of them
+- Plugins are just npm packages
+
+</v-clicks>
+
+<div class="h-[18px]"></div>
+
+---
+
+<video src="/kamera-viewfinder.mp4" muted autoplay loop>could not play video</video>
+
+<v-clicks>
+
+In some cases, there might not be a plugin for you.
+
+You can write your own plugins:
+
+</v-clicks>
+
+<v-clicks>
+
+- <twemoji-unlocked /> Access to any native component
+- <twemoji-clamp /> Reduced in scope for native code to develop
+- <twemoji-woman-raising-hand /> Not everyone in the team has to be familiar with plugin development & native code
+
+</v-clicks>
+
+---
+layout: interaction
+---
+
+# you want your app<br>to have the look and<br>feel of Android<br>and iOS?
+
+---
+
+## <vscode-icons-file-type-ionic /> Ionic
+
+<v-clicks depth="2">
+
+<ul>
+<li><twemoji-books/> Large library of customizable components</li>
+<li><twemoji-ghost/> Render differently based on the platform</li>
+<li>
+
+<vscode-icons-file-type-nuxt /> Are you Nuxt?
+
+<ul>
+<li>
+
+[@nuxtjs/ionic](https://ionic.nuxtjs.org)
+
+</li>
+<li class="code--large">
+
+Get started with:
+
+```bash {all}{lines:false}
+npx nuxi@latest module add ionic
+```
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</v-clicks>
+
+---
+layout: title
+centered: true
+---
+
+# that's all for me!
+
+<p><v-click>heading to japan next year</v-click><v-click>, maybe we'll hack a few things together!</v-click></p>
+
+---
+layout: interaction
+---
+
+# [lucie.red/nuxtnation](https://lucie.red/nuxtnation)
+
+^- get everything from this talk, and more
+
+---
+layout: interaction
+---
+
+# thanks!
+
+-> [lucie.red/nuxtnation](https://lucie.red/nuxtnation)

@@ -30,9 +30,6 @@
 		"unit": "exit 0",
 		"test": "pnpm lint && pnpm typecheck && pnpm unit"
 	},
-	"workspaces": [
-		"*-*"
-	],
 	"devDependencies": {
 		"@lihbr/eslint-config": "^0.0.3",
 		"eslint": "^9.13.0"
