@@ -1245,6 +1245,19 @@ centered: true
 <h1><v-click>capacitor</v-click><v-click>, capacitor plugins</v-click><v-click>, and ionic</v-click></h1>
 
 ---
+layout: interaction
+align: left
+---
+
+# can Nuxt<br>make great<br>mobile apps?
+
+<v-clicks>
+
+Yes, absolutely.
+
+</v-clicks>
+
+---
 
 ## <vscode-icons-file-type-capacitor /> Capacitor
 
