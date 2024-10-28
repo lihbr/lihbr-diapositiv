@@ -40,7 +40,7 @@ layout: interaction
 
 ---
 
-TODO: Placeholder phone camera app
+<video src="/camera.mp4" muted autoplay loop>could not play video</video>
 
 ---
 
@@ -130,7 +130,7 @@ layout: interaction
 
 ---
 
-TODO: Placeholder Philips Hue app
+<video src="/philips-hue.mp4" muted autoplay loop class="max-h-[1016px] mx-auto">could not play video</video>
 
 ---
 layout: interaction
@@ -158,7 +158,7 @@ Also creates apps for Android and iOS in one go.
 
 ---
 
-TODO: Placeholder React Native camera app
+<video src="/shadow-lens.mp4" muted autoplay loop>could not play video</video>
 
 ---
 layout: interaction
@@ -168,7 +168,7 @@ layout: interaction
 
 ---
 
-TODO: Placeholder Kamera app
+<video src="/kamera.mp4" muted autoplay loop>could not play video</video>
 
 ---
 layout: interaction
