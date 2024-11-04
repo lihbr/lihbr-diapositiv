@@ -1,5 +1,5 @@
 ---
-theme: ../../slidev-theme-diapositiv
+theme: diapositiv
 title: Can Nuxt Make Great Mobile Apps?
 info: |
   ## can nuxt make great mobile apps?
@@ -144,7 +144,7 @@ layout: interaction
 layout: interaction
 ---
 
-# we're mostly JavaScript developers aren't we?
+# we're mostly JavaScript developers, aren't we?
 
 ---
 
@@ -574,7 +574,7 @@ centered: true
 layout: interaction
 ---
 
-# we have a lot of Nuxt developers in this room, do we?
+# we have a lot of Nuxt developers in this room, don't we?
 
 ---
 
@@ -1028,7 +1028,7 @@ right:
 
 `capacitor-camera2/src/definitions.ts`
 
-```typescript {all|16-26|14,31-32|28-29|all}{lines:true,startLine:9}
+```typescript {all|16-26|14,31-32|28-29}{lines:true,startLine:9}
 /* ... */
 
 export type Camera2Plugin = {

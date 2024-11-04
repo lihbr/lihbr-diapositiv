@@ -150,8 +150,8 @@ importers:
         specifier: ^0.50.0-beta.5
         version: 0.50.0-beta.5(@babel/parser@7.25.8)(@nuxt/kit@3.13.2(rollup@4.24.0))(@types/markdown-it@14.1.2)(@types/node@18.19.58)(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.0)
       slidev-theme-diapositiv:
-        specifier: ^1.0.0
-        version: 1.0.0(@nuxt/kit@3.13.2(rollup@4.24.0))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9(@types/node@18.19.58))
+        specifier: ^1.0.1
+        version: 1.0.1(@nuxt/kit@3.13.2(rollup@4.24.0))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9(@types/node@18.19.58))
 
 packages:
 
@@ -4641,8 +4641,8 @@ packages:
     resolution: {integrity: sha512-l40O4ut/eiZ3WxsGKhHrdnQe1MODTbYIuBUELroL9F+/Ffgr0yUyxsuwlii/CnxhRxvAo/oNofGDFAGxuJBjAg==}
     engines: {node: '>=20.0.0', slidev: '>=0.43.0'}
 
-  slidev-theme-diapositiv@1.0.0:
-    resolution: {integrity: sha512-iiqIktMmhtiYIkioiI1FRBAELEW6FH573lJ/WxPQCw2gJevyjHwrbSvrS7YLWlc/fFg/+quqc1uAajp1tNNawA==}
+  slidev-theme-diapositiv@1.0.1:
+    resolution: {integrity: sha512-dW48WL/6OO50/RfMjgRV9RAhr4q7BhWHttUQhtGpd8fe5NnnAZYJqLkOB88PsNMSF1OW9JTLV5C2BZ1cau36jQ==}
     engines: {node: '>=22.0.0'}
 
   source-map-js@1.2.1:
@@ -11368,7 +11368,7 @@ snapshots:
       prism-theme-vars: 0.2.4
       qrcode-svg: 1.1.0
 
-  slidev-theme-diapositiv@1.0.0(@nuxt/kit@3.13.2(rollup@4.24.0))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9(@types/node@18.19.58)):
+  slidev-theme-diapositiv@1.0.1(@nuxt/kit@3.13.2(rollup@4.24.0))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9(@types/node@18.19.58)):
     dependencies:
       '@fontsource-variable/m-plus-1': 5.1.0
       '@fontsource/geist-mono': 5.1.0
