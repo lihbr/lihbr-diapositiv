@@ -1,6 +1,6 @@
 [build]
 base = ""
-command = "cd $DIRECTORY && npx slidev build && mv dist ../dist"
+command = "cd $DIRECTORY && npx slidev build && mv dist ../dist && rm ../dist/_redirects"
 publish = "dist/"
 ignore = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECTORY}/\""
 
@@ -11,4 +11,10 @@ NODE_VERSION = "22"
 from = "/assets/fonts/*"
 to = "https://lihbr.com/assets/fonts/:splat"
 status = 200
-force = true
+force = false
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
