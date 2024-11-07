@@ -164,7 +164,7 @@ Also creates apps for Android and iOS in one go.
 layout: interaction
 ---
 
-# cool Lucie, that's quite some technologies you got there, but I came here to hear about Nuxt!
+# cool Lucie, that's quite some technologies you got there, but I came today to hear about Nuxt!
 
 ---
 
