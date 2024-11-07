@@ -8,13 +8,13 @@ ignore = "git diff --quiet HEAD^ HEAD ./package.json ./netlify.toml \"./${DIRECT
 NODE_VERSION = "22"
 
 [[redirects]]
-from = "/assets/fonts/*"
-to = "https://lihbr.com/assets/fonts/:splat"
+from = "/*"
+to = "/index.html"
 status = 200
 force = false
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
+from = "/assets/fonts/*"
+to = "https://lihbr.com/assets/fonts/:splat"
 status = 200
 force = false

@@ -1113,7 +1113,7 @@ layout: interaction
 
 <v-clicks>
 
-# we won't be all making camera app here
+# we won't be all making camera apps here
 
 My story is just an example.
 
