@@ -1342,7 +1342,7 @@ You can write your own plugins:
 layout: interaction
 ---
 
-# you want your app<br>to have the look and<br>feel of Android<br>and iOS?
+# do you want your app<br>to have the look and<br>feel of Android<br>and iOS?
 
 ---
 
