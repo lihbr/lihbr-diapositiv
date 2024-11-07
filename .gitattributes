@@ -8,6 +8,7 @@ yarn.lock -diff
 *.enc -diff
 
 # treats assets as binaries
+*.mp4 binary
 *.png binary
 *.jpg binary
 *.jpeg binary
