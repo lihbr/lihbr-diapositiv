@@ -350,7 +350,7 @@ layout: interaction
 
 ---
 
-## <vscode-icons-file-type-vue /> Vue <v-click>+ <vscode-icons-file-type-nuxt /> Nuxt</v-click>
+## <vscode-icons-file-type-vue /> Vue <v-click>+ <vscode-icons-file-type-nuxt-fix /> Nuxt</v-click>
 
 <v-clicks>
 
@@ -501,7 +501,7 @@ layout: interaction
 
 ---
 
-## <vscode-icons-file-type-nuxt /> Nuxt app <v-click>+ <vscode-icons-file-type-capacitor /> Capacitor</v-click>
+## <vscode-icons-file-type-nuxt-fix /> Nuxt app <v-click>+ <vscode-icons-file-type-capacitor /> Capacitor</v-click>
 
 ---
 
@@ -1121,7 +1121,7 @@ My story is just an example.
 
 ---
 
-## <vscode-icons-file-type-nuxt /> Nuxt + <vscode-icons-file-type-capacitor /> Capacitor
+## <vscode-icons-file-type-nuxt-fix /> Nuxt + <vscode-icons-file-type-capacitor /> Capacitor
 
 <v-clicks>
 
@@ -1309,7 +1309,7 @@ We use Capacitor plugins to discuss through it:
 
 <v-clicks depth="2">
 
-- Comparable to <vscode-icons-file-type-nuxt /> Nuxt modules
+- Comparable to <vscode-icons-file-type-nuxt-fix /> Nuxt modules
 - <twemoji-1st-place-medal/> Capacitor makes many first-party plugins
   - <twemoji-3rd-place-medal/> The community also makes many of them
 - Plugins are just npm packages
@@ -1355,7 +1355,7 @@ layout: interaction
 <li><twemoji-ghost/> Render differently based on the platform</li>
 <li>
 
-<vscode-icons-file-type-nuxt /> Are you Nuxt?
+<vscode-icons-file-type-nuxt-fix /> Are you Nuxt?
 
 <ul>
 <li>
