@@ -488,7 +488,7 @@ layout: interaction
 ---
 
 <ul>
-	<li><twemoji-bento-box/> Code can be shared between ou apps</li>
+	<li><twemoji-bento-box/> Code can be shared between our apps</li>
 	<v-clicks depth="2">
 		<li><twemoji-woman-technologist/> Same developer experience
 			<ul>
