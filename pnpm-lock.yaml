@@ -153,6 +153,15 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(@nuxt/kit@3.14.159(rollup@4.24.4))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.4)(typescript@5.6.3)(vite@5.4.10(@types/node@18.19.64))
 
+  241120-nuxt-mobile-apps:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^0.50.0-beta.5
+        version: 0.50.0-beta.5(@babel/parser@7.26.2)(@nuxt/kit@3.14.159(rollup@4.24.4))(@types/markdown-it@14.1.2)(@types/node@18.19.64)(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.4)
+      slidev-theme-diapositiv:
+        specifier: ^1.0.1
+        version: 1.0.1(@nuxt/kit@3.14.159(rollup@4.24.4))(@vue/compiler-sfc@3.5.12)(postcss@8.4.47)(rollup@4.24.4)(typescript@5.6.3)(vite@5.4.10(@types/node@18.19.64))
+
 packages:
 
   '@ampproject/remapping@2.3.0':
