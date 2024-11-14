@@ -441,7 +441,7 @@ layout: interaction
 layout: interaction
 ---
 
-# how does Capacitor works?
+# how does Capacitor work?
 
 ---
 nofig: true

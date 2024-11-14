@@ -1,5 +1,5 @@
 ---
-theme: diapositiv
+theme: ../../slidev-theme-diapositiv
 title: Can Nuxt Make Great Mobile Apps?
 info: |
   ## can nuxt make great mobile apps?
@@ -426,7 +426,7 @@ layout: interaction
 layout: interaction
 ---
 
-# how does Capacitor works?
+# how does Capacitor work?
 
 ---
 nofig: true
