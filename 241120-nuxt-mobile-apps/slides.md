@@ -1,5 +1,5 @@
 ---
-theme: ../../slidev-theme-diapositiv
+theme: diapositiv
 title: Can Nuxt Make Great Mobile Apps?
 info: |
   ## can nuxt make great mobile apps?
